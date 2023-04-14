@@ -13,21 +13,26 @@ import { Link } from "react-router-dom";
 function Navbar() {
     return (
         <>
-            <AppBar position="static" style={{ backgroundColor: "#1d3557" }}>
+            <AppBar position="static" style={{ backgroundColor: "#CD0045" }}>
                 <Toolbar variant="dense">
                     <Box display={"flex"} justifyContent={"space-between"} width={"100%"}>
-                        <Box style={{ cursor: "pointer" }}>
-                            <Typography variant="h5" color="inherit">
-                                BlogPessoal
-                            </Typography>
-                        </Box>
-
-                        <Box display="flex">
-                            <Box mx={1} style={{ cursor: "pointer" }}>
-                                <Typography variant="subtitle1" color="inherit">
-                                    Home
+                        
+                        <Link to="/home">
+                            <Box style={{ cursor: "pointer", color: "white" }}>
+                                <Typography variant="h5" color="inherit">
+                                    ConectaVaga
                                 </Typography>
                             </Box>
+                        </Link>
+
+                        <Box display="flex">
+                            <Link to='/home'>    
+                                <Box mx={1} style={{ cursor: "pointer", color: "white" }}>
+                                    <Typography variant="subtitle1" color="inherit">
+                                        Home
+                                    </Typography>
+                                </Box>
+                            </Link>
                             <Box mx={1} style={{ cursor: "pointer" }}>
                                 <Typography variant="subtitle1" color="inherit">
                                     Postagens
@@ -43,6 +48,13 @@ function Navbar() {
                                     Cadastrar Tema
                                 </Typography>
                             </Box>
+                            <Link to='/sobrenos'>
+                                <Box mx={1} style={{ cursor: "pointer", color: "white" }}>
+                                    <Typography variant="subtitle1" color="inherit">
+                                        Sobre nós
+                                    </Typography>
+                                </Box>
+                            </Link>
                         </Box>
 
                         <Box>
