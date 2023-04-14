@@ -11,54 +11,61 @@ import { Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-    return (
-        <>
-            <AppBar position="static" style={{ backgroundColor: "#1d3557" }}>
-                <Toolbar variant="dense">
-                    <Box display={"flex"} justifyContent={"space-between"} width={"100%"}>
-                        <Box style={{ cursor: "pointer" }}>
-                            <Typography variant="h5" color="inherit">
-                               ConectaVaga
-                            </Typography>
-                        </Box>
 
-                        <Box display="flex">
-                            <Box mx={1} style={{ cursor: "pointer" }}>
-                                <Typography variant="subtitle1" color="inherit">
-                                    Home
-                                </Typography>
-                            </Box>
-                            <Box mx={1} style={{ cursor: "pointer" }}>
-                                <Typography variant="subtitle1" color="inherit">
-                                    Postagens
-                                </Typography>
-                            </Box>
-                            <Box mx={1} style={{ cursor: "pointer" }}>
-                                <Typography variant="subtitle1" color="inherit">
-                                    Temas
-                                </Typography>
-                            </Box>
-                            <Box mx={1} style={{ cursor: "pointer" }}>
-                                <Typography variant="subtitle1" color="inherit">
-                                    Cadastrar Tema
-                                </Typography>
-                            </Box>
-                        </Box>
 
-                        <Box>
-                            <Link to='/login' id="textDecorator">
-                                <Box mx={1} style={{ cursor: "pointer", color: 'white' }}>
-                                    <Typography variant="subtitle1" color="inherit">
-                                        Logout
-                                    </Typography>
-                                </Box>
-                            </Link>
-                        </Box>
-                    </Box>
-                </Toolbar>
-            </AppBar>
-        </>
-    );
+            <Box display="flex">
+              <Link to="/home">
+                <Box mx={1} style={{ cursor: "pointer", color: "#EBF2F2" }}>
+                  <Typography variant="subtitle1" color="inherit">
+                    Home
+                  </Typography>
+                </Box>
+              </Link>
+              <Box mx={1} style={{ cursor: "pointer", color: '#EBF2F2' }}>
+                <Typography variant="subtitle1" color="inherit">
+                  Postagens
+                </Typography>
+              </Box>
+              <Box mx={1} style={{ cursor: "pointer", color: '#EBF2F2' }}>
+                <Typography variant="subtitle1" color="inherit">
+                  Temas
+                </Typography>
+              </Box>
+              <Box mx={1} style={{ cursor: "pointer", color: '#EBF2F2' }}>
+                <Typography variant="subtitle1" color="inherit">
+                  Cadastrar Tema
+                </Typography>
+              </Box>
+              <Link to="/sobrenos">
+                <Box mx={1} style={{ cursor: "pointer", color: "#EBF2F2" }}>
+                  <Typography variant="subtitle1" color="inherit">
+                    Sobre
+                  </Typography>
+                </Box>
+              </Link>
+              <Link to="/sobrenos">
+                <Box mx={1} style={{ cursor: "pointer", color: "#EBF2F2" }}>
+                  <Typography variant="subtitle1" color="inherit">
+                    Contato
+                  </Typography>
+                </Box>
+              </Link>
+            </Box>
+
+            <Box>
+              <Link to="/login" id="textDecorator">
+                <Box mx={1} style={{ cursor: "pointer", color: "#EBF2F2" }}>
+                  <Typography variant="subtitle1" color="inherit">
+                    Logout
+                  </Typography>
+                </Box>
+              </Link>
+            </Box>
+          </Box>
+        </Toolbar>
+      </AppBar>
+    </>
+  );
 }
 
 export default Navbar;
