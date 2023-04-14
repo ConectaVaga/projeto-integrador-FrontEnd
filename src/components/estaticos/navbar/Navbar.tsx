@@ -11,18 +11,7 @@ import { Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  return (
-    <>
-      <AppBar position="static" style={{ backgroundColor: "#0A0840" }}>
-        <Toolbar variant="dense">
-          <Box display={"flex"} justifyContent={"space-between"} width={"100%"}>
-            <Link to="/home">
-              <Box style={{ cursor: "pointer", color: "#EBF2F2" }}>
-                <Typography variant="h5" color="inherit">
-                  <img src="https://ik.imagekit.io/6kg1q0s1r/Logo_ConectVagas_1.png?updatedAt=1681492211384" alt="" width={30} height={25}/> ConectaVaga 
-                </Typography>
-              </Box>
-            </Link>
+
 
             <Box display="flex">
               <Link to="/home">
