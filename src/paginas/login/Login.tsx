@@ -12,6 +12,11 @@ function Login() {
                 <Grid item xs={6} alignItems='center'>
                     <Box paddingX={10}>
                         <form>
+                        <Box paddingX={12}>
+                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" style={{ color: "#1d3557", fontWeight: "bold" }}>
+                            Seja bem vinde!
+                        </Typography>
+                    </Box>
                             <Typography variant='h4' gutterBottom color={'textPrimary'} align='center'>Entrar</Typography>
                             <TextField id='usuario' label='Usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
                             <TextField id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
