@@ -18,7 +18,7 @@ function Navbar() {
                     <Box display={"flex"} justifyContent={"space-between"} width={"100%"}>
                         <Box style={{ cursor: "pointer" }}>
                             <Typography variant="h5" color="inherit">
-                               ConectaVag
+                               ConectaVaga
                             </Typography>
                         </Box>
 
