@@ -15,7 +15,7 @@ function Login() {
                             <TextField id='usuario' label='Usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
                             <TextField id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
                             <Box marginTop={2} textAlign={'center'}>
-                                <Link to='/home'>
+                               <Link to='/home'>
                                     <Button type='submit' variant='contained' color='primary' >Logar</Button>
                                 </Link>
                             </Box>

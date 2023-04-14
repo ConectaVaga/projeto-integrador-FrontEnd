@@ -5,3 +5,10 @@
     min-height: 100vh;
     background-position: center;
 }
+.junte{
+    cursor: 'pointer' !important
+    
+}
+.junte :hover{
+    color: 'yellow' !important
+}
