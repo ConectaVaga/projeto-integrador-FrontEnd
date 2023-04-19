@@ -6,6 +6,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import useLocalStorage from 'react-use-localstorage'
 import UsuarioLogin from '../../models/UsuarioLogin'
 import { login } from '../../service/Service'
+import Usuario from '../../models/Usuario'
 
 
 function Login() {
@@ -62,12 +63,10 @@ function Login() {
                         </Typography>
                     </Box>
                             <Typography variant='h4' gutterBottom color={'textPrimary'} align='center'>Entrar</Typography>
-                            <TextField id='usuario' value={userLogin.usuario} onChange={(event: ChangeEvent<HTMLInputElement>) => updatedModel(event)} label='Usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
-                            <TextField id='senha' value={userLogin.senha} onChange={(event: ChangeEvent<HTMLInputElement>) => updatedModel(event)}label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
+                            <TextField id='usuario' value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} label='Usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
+                            <TextField id='senha' value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
                             <Box marginTop={2} textAlign={'center'}>
-                               <Link to='/home'>
                                     <Button type='submit' variant='contained' color='primary' >Logar</Button>
-                                </Link>
                             </Box>
                         </form>
                         <Box display={'flex'} justifyContent={'center'} marginTop={2}>

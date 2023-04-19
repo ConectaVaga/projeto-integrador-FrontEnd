@@ -7,7 +7,7 @@ import Usuario from '../../models/Usuario'
 
 function CadastroUsuario() {
 
-    const history = useNavigate()
+    const history = useNavigate();
 
     const [usuario, setUsuario] = useState<Usuario>({
         id: 0,
@@ -72,7 +72,7 @@ function CadastroUsuario() {
             <Grid item xs={6} className='imagem2'></Grid>
             <Grid item xs={6} alignItems='center'>
                 <Box paddingX={10}>
-                    <form>
+                    <form onSubmit={onSubmit}>
                         <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className="textos2">Cadastre-se</Typography>
                         <TextField id='nome' value={usuario.nome} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} label='Nome completo' variant='outlined' name='nome' margin='normal' fullWidth />
                         <TextField id='usuario' value={usuario.usuario} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} label='Usuário (endereço de e-mail)' variant='outlined' name='usuario' margin='normal' fullWidth />

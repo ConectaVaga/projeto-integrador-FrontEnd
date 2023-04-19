@@ -71,7 +71,7 @@ function Navbar() {
 
             <Box>
               <Link to="/login" id="textDecorator">
-                <Box mx={1} className="textDecorator">
+                <Box mx={1} className="cursor">
                   <Typography variant="subtitle1" color="inherit">
                     Logout
                   </Typography>

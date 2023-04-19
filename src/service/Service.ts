@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const api = axios.create({
-    baseURL: 'https://conectavaga.onrender.com/'
+    baseURL: 'https://conectavaga.onrender.com'
 })
 
 export const login = async(url: any, dados: any, setDado: any) => {
