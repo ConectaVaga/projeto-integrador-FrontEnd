@@ -13,49 +13,55 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <>
-      <AppBar position="static" style={{ backgroundColor: "#0A0840" }}>
+      <AppBar position="static" className="Abar">
         <Toolbar variant="dense">
           <Box display={"flex"} justifyContent={"space-between"} width={"100%"}>
             <Link to="/home">
-              <Box style={{ cursor: "pointer", color: "#EBF2F2" }}>
+              <Box className="cursor">
                 <Typography variant="h5" color="inherit">
-                  <img src="https://ik.imagekit.io/6kg1q0s1r/Logo_ConectVagas_1.png?updatedAt=1681492211384" alt="" width={30} height={25}/> ConectaVaga 
+                  <img
+                    src="https://ik.imagekit.io/6kg1q0s1r/Logo_ConectVagas_1.png?updatedAt=1681492211384"
+                    alt=""
+                    width={30}
+                    height={25}
+                  />{" "}
+                  ConectaVaga
                 </Typography>
               </Box>
             </Link>
 
             <Box display="flex">
               <Link to="/home">
-                <Box mx={1} style={{ cursor: "pointer", color: "#EBF2F2" }}>
+                <Box mx={1} className="cursor">
                   <Typography variant="subtitle1" color="inherit">
                     Home
                   </Typography>
                 </Box>
               </Link>
-              <Box mx={1} style={{ cursor: "pointer", color: '#EBF2F2' }}>
+              <Box mx={1} className="cursor">
                 <Typography variant="subtitle1" color="inherit">
                   Postagens
                 </Typography>
               </Box>
-              <Box mx={1} style={{ cursor: "pointer", color: '#EBF2F2' }}>
+              <Box mx={1} className="cursor">
                 <Typography variant="subtitle1" color="inherit">
                   Temas
                 </Typography>
               </Box>
-              <Box mx={1} style={{ cursor: "pointer", color: '#EBF2F2' }}>
+              <Box mx={1} className="cursor">
                 <Typography variant="subtitle1" color="inherit">
                   Cadastrar Tema
                 </Typography>
               </Box>
               <Link to="/sobrenos">
-                <Box mx={1} style={{ cursor: "pointer", color: "#EBF2F2" }}>
+                <Box mx={1} className="cursor">
                   <Typography variant="subtitle1" color="inherit">
                     Sobre
                   </Typography>
                 </Box>
               </Link>
               <Link to="/sobrenos">
-                <Box mx={1} style={{ cursor: "pointer", color: "#EBF2F2" }}>
+                <Box mx={1} className="cursor">
                   <Typography variant="subtitle1" color="inherit">
                     Contato
                   </Typography>
@@ -65,7 +71,7 @@ function Navbar() {
 
             <Box>
               <Link to="/login" id="textDecorator">
-                <Box mx={1} style={{ cursor: "pointer", color: "#EBF2F2" }}>
+                <Box mx={1} className="textDecorator">
                   <Typography variant="subtitle1" color="inherit">
                     Logout
                   </Typography>
