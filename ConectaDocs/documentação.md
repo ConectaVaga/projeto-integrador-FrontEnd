@@ -96,7 +96,7 @@
       "usuario": "email@provedor.com",
       "senha": "senha-criptografada",
       "foto": "url-da-foto", // ou null
-      "postagem": [ ### TO DO **************************************************************************************************
+      "postagem": [ ### TO DO ********************************************************************************************************************************************************
         {
           "id": 6,
           "titulo": "Minha Postagem",
@@ -244,7 +244,7 @@
       "id": "#", // número do ID único do tema
       "categoria": "Exemplo de Teste",
       "nome": "Nome da Categoria de Teste",
-      "postagem": []
+      "postagem": [] // ou todas as postagens deste tema específico
     }
   ]
   ```
@@ -272,7 +272,7 @@
     "id": "#", // número do ID único pesquisado
     "categoria": "Exemplo de Teste",
     "nome": "Nome da Categoria de Teste",
-    "postagem": []
+    "postagem": [] // ou todas as postagens deste tema específico
   }
   ```
   
@@ -366,6 +366,188 @@
 
 ## Postagem
 
+<!-- =========================== -->
+<!--       C A D A S T R A R     -->
+<!-- =========================== -->
+<details>
+  <summary>
+    <img src="./img/POST.png" alt="POST" width="40px" height="22px">
+    <b>/postagens</b>
+  </summary>
+  <br>
+  <p>Adicionar uma nova postagem.</p>
+  <br>
+  <b>>>> Requisição:</b>
+  
+  ```json
+  {
+    "titulo":"Exemplo de Postagem",
+    "texto":"Texto do exemplo de Postagem",
+    "imagem":"url-da-imagem",
+    "tema":{
+      "id": "#" // número do ID de um tema
+    },
+    "usuario":{
+      "id": "#" // número do ID de um usuário
+    }
+  }
+  ```
+  
+  <br>
+  <b><<< Resposta:</b>
+  
+  ```json
+  {
+    "id": "#", // número do ID único da postagem adicionada
+    "titulo": "Exemplo de Postagem",
+    "texto": "Texto do exemplo de Postagem",
+    "data": "2023-04-19T19:17:14.427439796",
+    "imagem": null,
+    "tema": {
+      "id": "#", // número do ID do tema da postagem
+      "categoria": null,
+      "nome": null
+    },
+    "usuario": {
+      "id": "#", // número do ID do usuário que fez a postagem
+      "nome": null,
+      "usuario": null,
+      "senha": null,
+      "foto": null
+    }
+  }
+  ```
+  
+  <br>
+</details>
+
+
+<!-- =========================== -->
+<!--             A L L           -->
+<!-- =========================== -->
+<details>
+  <summary>
+    <img src="./img/GET.png" alt="GET" width="40px" height="22px">
+    <b>/postagens</b>
+  </summary>
+  <br>
+  <p>Listar todas as postagens.</p>
+  <br>
+  <b><<< Resposta:</b>
+  
+  ```json
+  [
+    {
+      "id": "#", // número do ID único da postagem
+      "titulo": "Exemplo de Postagem",
+      "texto": "Texto do exemplo de Postagem",
+      "data": "2023-04-19T19:17:14.42744",
+      "imagem": null,
+      "tema": {
+        "id": "#", // número do ID do tema da postagem
+        "categoria": "Exemplo de Teste",
+        "nome": "Nome da Categoria de Teste"
+      },
+      "usuario": {
+        "id": "#", // número do ID do usuário que fez a postagem
+        "nome": "Novo Nome do Usuario",
+        "usuario": "novo.email@provedor.com",
+        "senha": "nova-senha-criptografada",
+        "foto": "nova-url-da-foto"
+      }
+    } // em caso de múltiplas postagens, aparecerão mais aqui
+  ]
+  ```
+  
+  <br>
+</details>
+
+  
+<!-- =========================== -->
+<!--              I D            -->
+<!-- =========================== -->
+<details>
+  <summary>
+    <img src="./img/GET.png" alt="GET" width="40px" height="22px">
+    <b>/postagens/{id}</b>
+  </summary>
+  <br>
+  <b>>>> Requisição:</b>
+  <p>É necessário enviar uma <code>id</code> válida na url da requisição.</p>
+  
+  <b><<< Resposta:</b>
+  
+  ```json
+  {
+    "id": "#", // número do ID único da postagem
+    "titulo": "Exemplo de Postagem",
+    "texto": "Texto do exemplo de Postagem",
+    "data": "2023-04-19T19:17:14.42744",
+    "imagem": null,
+    "tema": {
+      "id": "#", // número do ID do tema da postagem
+      "categoria": "Exemplo de Teste",
+      "nome": "Nome da Categoria de Teste"
+    },
+    "usuario": {
+      "id": "#", // número do ID do usuário que fez a postagem
+      "nome": "Novo Nome do Usuario",
+      "usuario": "novo.email@provedor.com",
+      "senha": "nova-senha-criptografada",
+      "foto": "nova-url-da-foto"
+    }
+  }
+  ```
+  
+  <br>
+</details>
+
+
+<!-- =========================== -->
+<!--         T Í T U L O         -->
+<!-- =========================== -->
+<details>
+  <summary>
+    <img src="./img/GET.png" alt="GET" width="40px" height="22px">
+    <b>/postagens/titulo/{titulo}</b>
+  </summary>
+  <br>
+  <b>>>> Requisição:</b>
+  <p>É possível pesquisar por qualquer <code>titulo</code> de postagem, seja uma parte ou completo.</p>
+  
+  <b><<< Resposta:</b>
+  
+  ```json
+  [
+    {
+      "id": "#", // número do ID único da postagem
+      "titulo": "Exemplo de Postagem",
+      "texto": "Texto do exemplo de Postagem",
+      "data": "2023-04-19T19:17:14.42744",
+      "imagem": null,
+      "tema": {
+        "id": "#", // número do ID do tema da postagem
+        "categoria": "Exemplo de Teste",
+        "nome": "Nome da Categoria de Teste"
+      },
+      "usuario": {
+        "id": "#", // número do ID do usuário que fez a postagem
+        "nome": "Novo Nome do Usuario",
+        "usuario": "novo.email@provedor.com",
+        "senha": "nova-senha-criptografada",
+        "foto": "nova-url-da-foto"
+      }
+    } // em caso de múltiplas postagens, aparecerão mais aqui
+  ]
+  ```
+  
+  <br>
+</details>
+  
+  
+  
+
+
 
   
   
@@ -383,7 +565,4 @@
 
 
 
-
-
-
-
+#ToDo: Fazer PUT e DELETE de Postagem
