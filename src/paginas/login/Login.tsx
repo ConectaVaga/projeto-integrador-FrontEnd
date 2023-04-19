@@ -13,7 +13,7 @@ function Login() {
                     <Box paddingX={10}>
                         <form>
                         <Box paddingX={12}>
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" style={{ color: "#1d3557", fontWeight: "bold" }}>
+                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='texto'>
                             Seja bem vinde!
                         </Typography>
                     </Box>
@@ -32,7 +32,7 @@ function Login() {
 
                             </Box>
                             <Link to={'/cadastroUsuario'}>
-                                <Typography variant='subtitle2' gutterBottom align='center' style={{ fontWeight: 'bold' }}>Cadastre-se aqui</Typography>
+                                <Typography variant='subtitle2' gutterBottom align='center' className='texto'>Cadastre-se aqui</Typography>
                             </Link>
                         </Box>
                     </Box>

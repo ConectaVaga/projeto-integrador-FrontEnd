@@ -1,3 +1,17 @@
 .logo{
     color: #0A0840 !important;
 }
+
+.boxPrincipal {
+    background-color: #1d3557; 
+    height: 100%
+}
+
+.descricao {
+    color: white
+}
+
+.icones {
+    font-size: 30; 
+    color: white
+}

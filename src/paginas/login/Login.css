@@ -12,3 +12,8 @@
 .junte :hover{
     color: 'yellow' !important
 }
+
+.texto {
+    font-weight: bold !important;
+    color: #1d3557; 
+}

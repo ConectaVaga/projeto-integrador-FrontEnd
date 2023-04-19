@@ -1,6 +1,25 @@
 .fotoHome {
-    width: 100%;
-    height: 100%;
+    width: 500px;
+    height: 500px;
     display: block;
-   
+    transform: rotateY(180deg);  
+}
+
+.caixa {
+    background-color: white;
+}
+
+.titulo {
+    color: #1d3557 !important;
+    font-weight: bold
+}
+
+.botao {
+    border-color: #1d3557 !important; 
+    background-color: #a8dadc !important;
+    color: #1d3557
+}
+
+.postagens {
+    background-color: white
 }
