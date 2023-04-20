@@ -2,6 +2,13 @@
 
 <br>
 
+<!-- =========================== -->
+<!-- =========================== -->
+<!-- =========================== -->
+<!--        U S U A R I O        -->
+<!-- =========================== -->
+<!-- =========================== -->
+<!-- =========================== -->
 ## Usuário
 
 <!-- =========================== -->
@@ -95,18 +102,19 @@
       "nome": "Nome do Usuario",
       "usuario": "email@provedor.com",
       "senha": "senha-criptografada",
-      "foto": "url-da-foto", // ou null
-      "postagem": [ ### TO DO ********************************************************************************************************************************************************
+      "foto": "url-da-foto",
+      "postagem": [
         {
-          "id": 6,
-          "titulo": "Minha Postagem",
-          "texto": "Spring Teste 1",
-          "data": "2023-03-26T18:52:36.844974",
+          "id": "#", // número do ID do tema da postagem
+          "titulo": "Exemplo de Postagem",
+          "texto": "Texto do exemplo de Postagem",
+          "data": "2023-04-19T19:17:14.42744",
+          "imagem": null,
           "tema": {
-            "id": 2,
-            "descricao": "Tema 1 Atualizado"
-          }
-        }
+            "id": "#", // número do ID do usuário que fez a postagem
+            "categoria": "Exemplo de Teste",
+            "nome": "Nome da Categoria de Teste"
+        } // em caso de múltiplas postagens, aparecerão mais aqui
       ]
     }
   ]
@@ -137,7 +145,7 @@
     "usuario": "email@provedor.com",
     "senha": "senha-criptografada",
     "foto": "url-da-foto",
-    "postagem": []
+    "postagem": [] // em caso de postagens, elas aparecerão aqui
   }
   ```
   
@@ -172,7 +180,7 @@
   
   ```json
   {
-    "id": "#", // número da ID única que foi atualizada
+    "id": "#", // número da ID única que foi atualizada (mantém-se a mesma)
     "nome": "Novo Nome do Usuario",
     "usuario": "novo.email@provedor.com",
     "senha": "nova-senha-criptografada",
@@ -186,7 +194,15 @@
 
 
 <br>
-
+  
+  
+<!-- =========================== -->
+<!-- =========================== -->
+<!-- =========================== -->
+<!--           T E M A           -->
+<!-- =========================== -->
+<!-- =========================== -->
+<!-- =========================== -->
 ## Tema
 
 <!-- =========================== -->
@@ -231,7 +247,7 @@
 <details>
   <summary>
     <img src="./img/GET.png" alt="GET" width="40px" height="22px">
-    <b>/usuarios/all</b>
+    <b>/temas</b>
   </summary>
   <br>
   <p>Listar todos os temas.</p>
@@ -290,7 +306,7 @@
   </summary>
   <br>
   <b>>>> Requisição:</b>
-  <p>É possível pesquisar por qualquer <code>nome</code>, seja uma parte ou completo.</p>
+  <p>É possível pesquisar por qualquer <code>nome</code>, seja uma parte ou completo. No exemplo, foi pesquisado <code>tes</code>.</p>
   
   <b><<< Resposta:</b>
   
@@ -299,7 +315,7 @@
     "id": "#", // número do ID único do tema
     "categoria": "Exemplo de Teste",
     "nome": "Nome da Categoria de Teste",
-    "postagem": []
+    "postagem": [] // ou todas as postagens deste tema específico
   }
   ```
   
@@ -332,7 +348,7 @@
   
   ```json
   {
-    "id": "#", // número do ID único que foi atualizado
+    "id": "#", // número do ID único que foi atualizado (mantém-se o mesmo)
     "categoria": "Novo exemplo de Teste",
     "nome": "Novo nome da categoria de Teste",
     "postagem": null
@@ -364,6 +380,15 @@
 
 <br>
 
+  
+  
+<!-- =========================== -->
+<!-- =========================== -->
+<!-- =========================== -->
+<!--      P O S T A G E N S      -->
+<!-- =========================== -->
+<!-- =========================== -->
+<!-- =========================== -->
 ## Postagem
 
 <!-- =========================== -->
@@ -450,10 +475,10 @@
       },
       "usuario": {
         "id": "#", // número do ID do usuário que fez a postagem
-        "nome": "Novo Nome do Usuario",
-        "usuario": "novo.email@provedor.com",
-        "senha": "nova-senha-criptografada",
-        "foto": "nova-url-da-foto"
+        "nome": "Nome do Usuario",
+        "usuario": "email@provedor.com",
+        "senha": "senha-criptografada",
+        "foto": "url-da-foto"
       }
     } // em caso de múltiplas postagens, aparecerão mais aqui
   ]
@@ -491,10 +516,10 @@
     },
     "usuario": {
       "id": "#", // número do ID do usuário que fez a postagem
-      "nome": "Novo Nome do Usuario",
-      "usuario": "novo.email@provedor.com",
-      "senha": "nova-senha-criptografada",
-      "foto": "nova-url-da-foto"
+      "nome": "Nome do Usuario",
+      "usuario": "email@provedor.com",
+      "senha": "senha-criptografada",
+      "foto": "url-da-foto"
     }
   }
   ```
@@ -513,7 +538,7 @@
   </summary>
   <br>
   <b>>>> Requisição:</b>
-  <p>É possível pesquisar por qualquer <code>titulo</code> de postagem, seja uma parte ou completo.</p>
+  <p>É possível pesquisar por qualquer <code>titulo</code> de postagem, seja uma parte ou completo. No exemplo, foi pesquisado <code>exe</code>.</p>
   
   <b><<< Resposta:</b>
   
@@ -532,10 +557,10 @@
       },
       "usuario": {
         "id": "#", // número do ID do usuário que fez a postagem
-        "nome": "Novo Nome do Usuario",
-        "usuario": "novo.email@provedor.com",
-        "senha": "nova-senha-criptografada",
-        "foto": "nova-url-da-foto"
+        "nome": "Nome do Usuario",
+        "usuario": "email@provedor.com",
+        "senha": "senha-criptografada",
+        "foto": "url-da-foto"
       }
     } // em caso de múltiplas postagens, aparecerão mais aqui
   ]
@@ -543,26 +568,77 @@
   
   <br>
 </details>
+
+
+<!-- =========================== -->
+<!--      A T U A L I Z A R      -->
+<!-- =========================== -->
+<details>
+  <summary>
+    <img src="./img/PUT.png" alt="PUT" width="40px" height="22px">
+    <b>/postagens</b>
+  </summary>
+  <br>
+  <b>>>> Requisição:</b>
+  <p>Atualizar ao menos uma parte da postagem. No exemplo: título e texto são alterados.</p>
   
+  ```json
+  {
+    "id":"#", // número do ID único da postagem a ser atualizada
+    "titulo":"Novo Exemplo de Postagem",
+    "texto":"Novo Texto do exemplo de Postagem",
+    "tema":{
+      "id":"#" // número de ID do tema da postagem a ser atualizada
+    },
+    "usuario":{
+      "id":"#" // número de ID do usuário que fez a postagem a ser atualizada
+    }
+  }
+  ```
   
+  <br>
+  <b><<< Resposta:</b>
   
-
-
-
+  ```json
+  {
+    "id": "#", // número do ID único da postagem que foi atualizada (mantém-se o mesmo)
+    "titulo": "Novo Exemplo de Postagem",
+    "texto": "Novo Texto do exemplo de Postagem",
+    "data": "2023-04-20T16:59:33.632666592", // a data é atualizada
+    "imagem": null,
+    "tema": {
+      "id": "#", // número de ID do tema da postagem que foi atualizada
+      "categoria": "Exemplo de Teste",
+      "nome": "Nome da Categoria de Teste"
+    },
+    "usuario": {
+      "id": "#", // número de ID do usuário que fez a postagem que foi atualizada
+      "nome": "Nome do Usuario",
+      "usuario": "email@provedor.com",
+      "senha": "senha-criptografada",
+      "foto": "url-da-foto"
+    }
+  }
+  ```
   
+  <br>
+</details>
+
+
+<!-- =========================== -->
+<!--         D E L E T A R       -->
+<!-- =========================== -->
+<details>
+  <summary>
+    <img src="./img/DELETE.png" alt="DELETE" width="50px" height="22px">
+    <b>/postagens/{id}</b>
+  </summary>
+  <br>
+  <b>>>> Requisição:</b>
+  <p>É necessário enviar uma <code>id</code> válida na url da requisição.</p>
   
-
+  <b><<< Resposta:</b>
+  <p>Retorna o código 204.</p>
   
-
-  
-
-
-================================================================================
-
-
-
-
-
-
-
-#ToDo: Fazer PUT e DELETE de Postagem
+  <br>
+</details>
