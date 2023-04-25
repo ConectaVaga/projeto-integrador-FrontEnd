@@ -1,5 +1,5 @@
 .imagemLogin{
-    background-image: url(https://ik.imagekit.io/6kg1q0s1r/Mobile_login-bro.png?updatedAt=1681416862865);
+    background-image: url(https://ik.imagekit.io/ohu04lxwc/login.png?updatedAt=1682451604357);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -9,11 +9,12 @@
     cursor: 'pointer' !important
     
 }
-.junte :hover{
-    color: 'yellow' !important
-}
 
 .texto {
     font-weight: bold !important;
-    color: #1d3557; 
+    color: #CD0045 !important; 
+}
+
+.botao {
+    color: #CD0045 !important;
 }

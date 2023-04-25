@@ -1,9 +1,10 @@
-.logo{
-    color: #0A0840 !important;
+.imgFooter{
+    width: 12vh;
+    height: 12vh;
 }
 
 .boxPrincipal {
-    background-color: #1d3557; 
+    background-color: #0A0840 !important; 
     height: 100%
 }
 
@@ -15,3 +16,4 @@
     font-size: 30; 
     color: white
 }
+

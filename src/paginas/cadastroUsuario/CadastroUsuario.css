@@ -1,5 +1,5 @@
 .fotoCadastroUsuario{
-    background-image: url(https://ik.imagekit.io/6kg1q0s1r/Mobile_login-pana.png?updatedAt=1681416802927);
+    background-image: url(https://ik.imagekit.io/ohu04lxwc/cadastro.png?updatedAt=1682451549983);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -9,4 +9,9 @@
 
 .botaoCancelar {
     margin-right: 20px !important;    
+}
+
+.texto2 {
+    color: #CD0045 !important;
+    font-weight: bold !important;
 }

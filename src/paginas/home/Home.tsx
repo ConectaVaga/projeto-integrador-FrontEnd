@@ -9,20 +9,25 @@ function Home() {
     return (
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
+            <Grid item xs={12}>
+                    <img src="https://ik.imagekit.io/6kg1q0s1r/C%C3%B3pia_de_Banners.png?updatedAt=1681922292947" alt="Imagem Capa" className="fotoHome" />
+                </Grid>
+                <Grid xs={12} className='postagens'>     
+                </Grid>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={12}>
-                        <Typography variant="h6" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>
-                            Seja bem-vindo!
+                        <Typography variant="h4" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>
+                            Postagens em Destaques
                         </Typography>
-                        <Typography variant="h5" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>
-                        O que gostaria de compartilhar?
+                        <Typography variant="subtitle1" gutterBottom color="textPrimary" component="h4" align="center" className='subtitulo'>
+                        Veja as postagens em destaque desta semana
                         </Typography>
                     </Box>
-                    <Box display="flex" justifyContent="center">
+                    <Box display="flex" justifyContent="center" marginBottom={3}>
                         <Box marginRight={1}>
                             <Button variant="outlined" className='botao'> Ver Postagens</Button>
                         </Box>
-                        <Box>
+                        <Box marginRight={1}>
                             <Button variant="outlined" className='botao'> Nova Postagem</Button>
                         </Box>
                         <Box>
@@ -30,11 +35,7 @@ function Home() {
                         </Box>
                     </Box>
                 </Grid>
-                <Grid item xs={6}>
-                    <img src="https://ik.imagekit.io/6kg1q0s1r/Writer_s_block-amico.png?updatedAt=1681323288251" alt="Imagem Capa" className="fotoHome" />
-                </Grid>
-                <Grid xs={12} className='postagens'>     
-                </Grid>
+                
             </Grid>
         </>
     );

@@ -1,7 +1,13 @@
 .fotoSobrenos{
-    background-image: url(https://ik.imagekit.io/6kg1q0s1r/BLOGPOST_THUMBNAIL_PESSOAS.jpg?updatedAt=1681494157936);
+    background-color: #EBF2F299;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
+}
+
+.titulo {
+    color: #CD0045 !important;
+    font-weight: bold !important;
+    margin-top: 2vh !important;
 }

@@ -58,15 +58,16 @@ function Login() {
                     <Box paddingX={10}>
                         <form onSubmit={onSubmit}>
                         <Box paddingX={12}>
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='texto'>
+                        <Typography variant="h4" gutterBottom color="textPrimary" component="h3" align="center" className='texto'>
                             Seja bem vinde!
                         </Typography>
                     </Box>
-                            <Typography variant='h4' gutterBottom color={'textPrimary'} align='center'>Entrar</Typography>
+                            <Typography variant='subtitle1' gutterBottom color={'textPrimary'} align='center'>Acesse sua conta agora mesmo</Typography>
+                            <TextField id='usuario' value={userLogin.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} label='Nome' variant='outlined' name='usuario' margin='normal' fullWidth />
                             <TextField id='usuario' value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} label='Usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
                             <TextField id='senha' value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
                             <Box marginTop={2} textAlign={'center'}>
-                                    <Button type='submit' variant='contained' color='primary' >Logar</Button>
+                                    <Button type='submit' variant='contained' >Entrar</Button>
                             </Box>
                         </form>
                         <Box display={'flex'} justifyContent={'center'} marginTop={2}>

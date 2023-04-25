@@ -8,9 +8,20 @@ import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import { Grid } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import useLocalStorage from "react-use-localstorage";
 
 function Navbar() {
+
+  const [token, setToken] = useLocalStorage('token')
+  const history = useNavigate()
+
+    function goLogout() {
+        setToken('')
+        alert('Usuário deslogado!')
+        history('/login')
+    }
+    
   return (
     <>
       <AppBar position="static" className="Abar">
@@ -18,19 +29,19 @@ function Navbar() {
           <Box display={"flex"} justifyContent={"space-between"} width={"100%"}>
             <Link to="/home">
               <Box className="cursor">
-                <Typography variant="h5" color="inherit">
+                <Typography variant="h4" color="inherit" alignItems={'center'}>
                   <img
                     src="https://ik.imagekit.io/6kg1q0s1r/Logo_ConectVagas_1.png?updatedAt=1681492211384"
                     alt=""
-                    width={30}
-                    height={25}
+                    className="icone"
+                                                          
                   />{" "}
-                  ConectaVaga
+                 ConectaVaga
                 </Typography>
               </Box>
             </Link>
 
-            <Box display="flex">
+            <Box display="flex" alignItems={'center'}>
               <Link to="/home">
                 <Box mx={1} className="cursor">
                   <Typography variant="subtitle1" color="inherit">
@@ -70,9 +81,9 @@ function Navbar() {
             </Box>
 
             <Box>
-              <Link to="/login" id="textDecorator">
-                <Box mx={1} className="cursor">
-                  <Typography variant="subtitle1" color="inherit">
+              <Link to="/login" className="textDecorator">
+                <Box mx={1} className="cursor" onClick={goLogout}>
+                  <Typography variant="subtitle1" color="inherit" alignItems={'center'}>
                     Logout
                   </Typography>
                 </Box>

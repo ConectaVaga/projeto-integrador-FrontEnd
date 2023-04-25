@@ -69,11 +69,12 @@ function CadastroUsuario() {
 
     return (
         <Grid container direction='row' justifyContent='center' alignItems='center'>
-            <Grid item xs={6} className='imagem2'></Grid>
+            <Grid item xs={6} className='fotoCadastroUsuario'></Grid>
             <Grid item xs={6} alignItems='center'>
-                <Box paddingX={10}>
+                <Box paddingX={10} marginTop={2}>
                     <form onSubmit={onSubmit}>
-                        <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className="textos2">Cadastre-se</Typography>
+                        <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className="texto2">Crie sua conta</Typography>
+                        <Typography variant='subtitle1' gutterBottom color='textPrimary' component='h3' align='center'> Preencha o formulário</Typography>
                         <TextField id='nome' value={usuario.nome} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} label='Nome completo' variant='outlined' name='nome' margin='normal' fullWidth />
                         <TextField id='usuario' value={usuario.usuario} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} label='Usuário (endereço de e-mail)' variant='outlined' name='usuario' margin='normal' fullWidth />
                         <TextField id='senha' value={usuario.senha} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
