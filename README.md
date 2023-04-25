@@ -25,7 +25,7 @@ A ONG busca oferecer oportunidades de trabalho e capacitações, bem como acompa
 ## ODS
 
 <div align=center>
-  <img width=1000px height=400px src="https://ik.imagekit.io/ohu04lxwc/banner.png?updatedAt=1682440755323"  />
+  <img width=1000px height=300px src="https://ik.imagekit.io/ohu04lxwc/banner.png?updatedAt=1682440755323"  />
 </div>
 
 ## Documentação
