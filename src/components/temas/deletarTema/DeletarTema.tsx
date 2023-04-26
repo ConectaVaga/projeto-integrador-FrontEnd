@@ -3,8 +3,8 @@ import {Card, CardActions, CardContent, Button, Typography} from '@material-ui/c
 import {Box} from '@mui/material';
 import './DeletarTema.css';
 import { useNavigate, useParams } from 'react-router-dom';
-import { getById, deleteId } from '../../../service/Service';
-import {Tema} from '../../../models/Tema';
+import {buscaId, deleteId } from '../../../service/Service';
+import Tema from '../../../models/Tema';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/TokensReducer';
 
@@ -35,7 +35,7 @@ function DeletarTema() {
   }, [id])
 
   async function findById(id: string) {
-      getById(`/temas/${id}`, setTema, {
+      buscaId(`/temas/${id}`, setTema, {
           headers: {
             'Authorization': token
           }

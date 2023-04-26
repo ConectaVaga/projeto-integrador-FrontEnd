@@ -1,7 +1,7 @@
 import React, { useState, ChangeEvent, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { Tema } from "../../../models/Tema";
-import { getById, post, put } from "../../../service/Service";
+import Tema  from "../../../models/Tema";
+import { buscaId, post, put } from "../../../service/Service";
 import { Button, Typography, TextField, Grid, Box } from "@mui/material";
 import "./CadastroTema.css";
 import { useSelector } from "react-redux";
@@ -18,7 +18,7 @@ function CadastroTema() {
 
   const [tema, setTema] = useState<Tema>({
     id: 0,
-    descricao: "",
+    descricao: ""
   });
 
   useEffect(() => {
@@ -35,7 +35,7 @@ function CadastroTema() {
   }, [id]);
 
   async function findById(id: string) {
-    await getById(`/temas/${id}`, setTema, {
+    await buscaId(`/temas/${id}`, setTema, {
       headers: {
         Authorization: token,
       },
