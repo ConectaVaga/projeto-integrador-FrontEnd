@@ -8,6 +8,8 @@ import Login from './paginas/login/Login';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Sobrenos from './paginas/sobrenos/Sobrenos';
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
+import CadastroPostagem from './components/postagens/cadastroPostagem/CadastroPostagem';
+import ListaPostagem from './components/postagens/listaPostagem/ListaPostagem';
 
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
             <Route path='/home' element={<Home />} />
             <Route path='/sobrenos' element={<Sobrenos />} />
             <Route path="/cadastrousuario" element={<CadastroUsuario />} />
+            <Route path='/cadastrarPostagem' element={<CadastroPostagem />} />
+            <Route path='/postagem' element={<ListaPostagem />} />
           </Routes>
           </div>
       <Footer />

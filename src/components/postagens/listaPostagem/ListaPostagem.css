@@ -1,0 +1,6 @@
+.listaPost {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80vw;
+    margin: 0 auto;
+  }
