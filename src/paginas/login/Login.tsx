@@ -63,8 +63,8 @@ function Login() {
                         </Typography>
                     </Box>
                             <Typography variant='h4' gutterBottom color={'textPrimary'} align='center'>Entrar</Typography>
-                            <TextField id='usuario' value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} label='Usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
-                            <TextField id='senha' value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
+                            <TextField id='usuario' value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} label='Usuário' variant='outlined' name='usuario' margin='normal' type='text' required fullWidth />
+                            <TextField id='senha' value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}label='Senha' variant='outlined' name='senha' margin='normal' type='password' required fullWidth />
                             <Box marginTop={2} textAlign={'center'}>
                                     <Button type='submit' variant='contained' color='primary' >Logar</Button>
                             </Box>

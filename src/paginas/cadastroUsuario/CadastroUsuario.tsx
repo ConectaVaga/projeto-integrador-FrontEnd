@@ -74,10 +74,10 @@ function CadastroUsuario() {
                 <Box paddingX={10}>
                     <form onSubmit={onSubmit}>
                         <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className="textos2">Cadastre-se</Typography>
-                        <TextField id='nome' value={usuario.nome} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} label='Nome completo' variant='outlined' name='nome' margin='normal' fullWidth />
-                        <TextField id='usuario' value={usuario.usuario} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} label='Usuário (endereço de e-mail)' variant='outlined' name='usuario' margin='normal' fullWidth />
-                        <TextField id='senha' value={usuario.senha} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
-                        <TextField id='confirmarSenha' value={confirmarSenha} onChange={(event: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(event)} label='Confirmar Senha' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth />
+                        <TextField id='nome' value={usuario.nome} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} label='Nome completo' variant='outlined' name='nome' margin='normal' type='text' required fullWidth />
+                        <TextField id='usuario' value={usuario.usuario} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} label='Usuário (endereço de e-mail)' variant='outlined' name='usuario' margin='normal' type='email' required fullWidth />
+                        <TextField id='senha' value={usuario.senha} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} label='Senha' variant='outlined' name='senha' margin='normal' type='password' required fullWidth />
+                        <TextField id='confirmarSenha' value={confirmarSenha} onChange={(event: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(event)} label='Confirmar Senha' variant='outlined' name='confirmarSenha' margin='normal' type='password' required fullWidth />
                         <TextField id='foto' value={usuario.foto} onChange={(event: ChangeEvent<HTMLInputElement>) => updateModel(event)} label='Foto (URL)' variant='outlined' name='foto' margin='normal' fullWidth />
                         <Box marginY={2} display={'flex'} justifyContent={'space-around'} gap={4}>
 
