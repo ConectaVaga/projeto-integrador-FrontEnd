@@ -143,6 +143,19 @@ function CadastroPostagem() {
                         multiline
                         minRows={4}
                     />
+                    <TextField
+                        value={postagem.imagem}
+                        onChange={(event: ChangeEvent<HTMLInputElement>) =>
+                            updateModel(event)
+                        }
+                        label="URL da Imagem"
+                        name="imagem"
+                        id="imagem"
+                        variant="outlined"
+                        fullWidth
+                        required
+                        minRows={4}
+                    />
 
                     <FormControl>
                         <InputLabel>Tema</InputLabel>
