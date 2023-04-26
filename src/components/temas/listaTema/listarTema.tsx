@@ -8,8 +8,8 @@ import {
   Typography,
 } from "@material-ui/core";
 import { Box } from "@mui/material";
-import { Tema } from "../../../models/Tema";
-import { getAll } from "../../../service/Service";
+import Tema  from "../../../models/Tema";
+import { busca } from "../../../service/Service";
 import "./ListaTema.css";
 import { useSelector } from "react-redux";
 import { TokenState } from "../../../store/tokens/TokensReducer";
@@ -23,8 +23,8 @@ function ListaTema() {
 
   const history = useNavigate();
 
-  async function getAllTemas() {
-    await getAll("/temas", setTemas, {
+  async function getTema() {
+    await busca("/temas", setTemas, {
       headers: {
         Authorization: token,
       },
@@ -32,7 +32,7 @@ function ListaTema() {
   }
 
   useEffect(() => {
-    getAllTemas();
+    getTema();
   }, []);
 
   useEffect(() => {
