@@ -9,7 +9,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Sobrenos from "./paginas/sobrenos/Sobrenos";
 import CadastroUsuario from "./paginas/cadastroUsuario/CadastroUsuario";
 
-import ListaTema from "./components/temas/listaTema/listarTema";
+import ListaTema from "./components/temas/listaTema/ListaTema";
 import CadastroTema from "./components/temas/cadastroTema/CadastroTema";
 import DeletarTema from "./components/temas/deletarTema/DeletarTema";
 import ListaPostagem from "./components/postagens/listaPostagem/ListaPostagem";

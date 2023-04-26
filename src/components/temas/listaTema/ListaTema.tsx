@@ -13,13 +13,16 @@ import { busca } from "../../../service/Service";
 import "./ListaTema.css";
 import { useSelector } from "react-redux";
 import { TokenState } from "../../../store/tokens/TokensReducer";
+import useLocalStorage from "react-use-localstorage";
 
 function ListaTema() {
   const [temas, setTemas] = useState<Tema[]>([]);
 
-  const token = useSelector<TokenState, TokenState["token"]>(
-    (state) => state.token
-  );
+  // const token = useSelector<TokenState, TokenState["token"]>(
+  //   (state) => state.token
+  // );
+
+  const [token] = useLocalStorage('token');
 
   const history = useNavigate();
 
@@ -51,7 +54,10 @@ function ListaTema() {
                 Tema
               </Typography>
               <Typography variant="h5" component="h2">
-                {tema.descricao}
+                {tema.categoria}
+              </Typography>
+              <Typography variant="h5" component="h2">
+                {tema.nome}
               </Typography>
             </CardContent>
             <CardActions>

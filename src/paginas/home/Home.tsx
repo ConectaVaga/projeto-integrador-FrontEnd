@@ -5,6 +5,7 @@ import { Box } from "@mui/material"
 import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
 import ListaPostagem from "../../components/postagens/listaPostagem/ListaPostagem";
+import ListaTema from "../../components/temas/listaTema/ListaTema";
 
 function Home() {
     return (

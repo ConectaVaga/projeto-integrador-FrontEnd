@@ -84,7 +84,7 @@ function CadastroPostagem() {
 
     async function onSubmit(event: ChangeEvent<HTMLFormElement>) {
         event.preventDefault();
-
+        
         if (id !== undefined) {
             try {
                 await put('/postagens', postagem, setPostagem, {

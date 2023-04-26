@@ -6,24 +6,28 @@ import { Button, Typography, TextField, Grid, Box } from "@mui/material";
 import "./CadastroTema.css";
 import { useSelector } from "react-redux";
 import { TokenState } from "../../../store/tokens/TokensReducer";
+import useLocalStorage from "react-use-localstorage";
 
 function CadastroTema() {
   const history = useNavigate();
 
   const { id } = useParams<{ id: string }>();
 
-  const token = useSelector<TokenState, TokenState["token"]>(
-    (state) => state.token
-  );
+  // const token = useSelector<TokenState, TokenState["token"]>(
+  //   (state) => state.token
+  // );
+
+  const [token] = useLocalStorage('token');
 
   const [tema, setTema] = useState<Tema>({
     id: 0,
-    descricao: ""
+    categoria: '',
+    nome: ''
   });
 
   useEffect(() => {
     if (token == "") {
-      alert("Você precisa estar logado");
+      alert("Você precisa estar logado para acessar esta página.");
       history("/login");
     }
   }, [token]);
@@ -93,9 +97,18 @@ function CadastroTema() {
           <form onSubmit={onSubmit}>
             <TextField
               className="input-tema"
-              label="Descrição do tema"
-              name="descricao"
-              value={tema.descricao}
+              label="Nome do tema"
+              name="nome"
+              value={tema.nome}
+              onChange={(event: ChangeEvent<HTMLInputElement>) =>
+                updatedTema(event)
+              }
+            />
+            <TextField
+              className="input-tema"
+              label="Categoria do tema"
+              name="categoria"
+              value={tema.categoria}
               onChange={(event: ChangeEvent<HTMLInputElement>) =>
                 updatedTema(event)
               }
