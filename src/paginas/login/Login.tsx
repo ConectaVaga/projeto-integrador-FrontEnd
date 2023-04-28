@@ -40,13 +40,6 @@ function Login() {
         })
     }
 
-    useEffect(()=>{
-        if(token !== ''){
-        dispatch(addToken(token))
-        history('/home')
-        }
-    }, [token])
-
     async function onSubmit(e: ChangeEvent<HTMLFormElement>){
         e.preventDefault();
         try{
@@ -76,6 +69,13 @@ function Login() {
         }
     }
 
+    useEffect(()=>{
+        if(token !== ''){
+        dispatch(addToken(token))
+        history('/home')
+        }
+    }, [token])
+    
     return (
         <>
             <Grid container direction='row' justifyContent='center' alignItems='center'>

@@ -3,51 +3,48 @@ import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
+
 import Typography from "@mui/material/Typography";
-import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
-import { Grid } from "@mui/material";
-import { Link, useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
 import { addToken } from "../../../store/tokens/Action";
 import { toast } from "react-toastify";
 import { TokenState } from "../../../store/tokens/TokensReducer";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
 
 
 function Navbar() {
 
   const token = useSelector<TokenState, TokenState["token"]>(
     (state) => state.token
-)
+  )
 
-const dispatch = useDispatch()
+  const dispatch = useDispatch()
 
-const history = useNavigate()
+  const history = useNavigate()
 
-function goLogout() {
+  function goLogout() {
     dispatch(addToken(''))
     toast.info('Usuário deslogado!', {
-        position: 'top-right',
-        autoClose: 2000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: false,
-        draggable: false,
-        theme: 'colored',
-        progress: undefined
+      position: 'top-right',
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: false,
+      theme: 'colored',
+      progress: undefined
     })
     history('/login')
-}
-    
+  }
 
-    var navbarComponent
 
-    if (token !== '') {
-      navbarComponent = <AppBar position="static" className="Abar">
+  var navbarComponent
+
+  if (token !== '') {
+    navbarComponent = <AppBar position="static" className="Abar">
       <Toolbar variant="dense">
         <Box display={"flex"} justifyContent={"space-between"} width={"100%"}>
-          <Link to="/home">
+          <Link to={"/home"}>
             <Box className="cursor">
               <Typography variant="h5" color="inherit">
                 <img
@@ -62,35 +59,47 @@ function goLogout() {
           </Link>
 
           <Box display="flex">
-            <Link to="/home">
+            <Link to={"/home"}>
               <Box mx={1} className="cursor">
                 <Typography variant="subtitle1" color="inherit">
                   Home
                 </Typography>
               </Box>
             </Link>
-            <Box mx={1} className="cursor">
-              <Typography variant="subtitle1" color="inherit">
-                Postagens
-              </Typography>
-            </Box>
-            <Box mx={1} className="cursor">
-              <Typography variant="subtitle1" color="inherit">
-                Temas
-              </Typography>
-            </Box>
-            <Box mx={1} className="cursor">
-              <Typography variant="subtitle1" color="inherit">
-                Cadastrar Tema
-              </Typography>
-            </Box>
+
+            <Link to={"/postagens"}>
+              <Box mx={1} className="cursor">
+                <Typography variant="subtitle1" color="inherit">
+                  Postagens
+                </Typography>
+              </Box>
+            </Link>
+
+            <Link to={"/temas"}>
+              <Box mx={1} className="cursor">
+                <Typography variant="subtitle1" color="inherit">
+                  Temas
+                </Typography>
+              </Box>
+            </Link>
+
+            <Link to={"/formularioTema"}>
+              <Box mx={1} className="cursor">
+                <Typography variant="subtitle1" color="inherit">
+                  Cadastrar Tema
+                </Typography>
+              </Box>
+            </Link >
+
             <Link to="/sobrenos">
               <Box mx={1} className="cursor">
                 <Typography variant="subtitle1" color="inherit">
                   Sobre
                 </Typography>
               </Box>
+
             </Link>
+
             <Link to="/sobrenos">
               <Box mx={1} className="cursor">
                 <Typography variant="subtitle1" color="inherit">
@@ -101,16 +110,16 @@ function goLogout() {
           </Box>
 
           <Box>
-              <Box mx={1} className="cursor" onClick={goLogout}>
-                <Typography variant="subtitle1" color="inherit">
-                  Logout
-                </Typography>
-              </Box>
+            <Box mx={1} className="cursor" onClick={goLogout}>
+              <Typography variant="subtitle1" color="inherit">
+                Logout
+              </Typography>
+            </Box>
           </Box>
         </Box>
       </Toolbar>
     </AppBar>
-    }
+  }
 
   return (
     <>
