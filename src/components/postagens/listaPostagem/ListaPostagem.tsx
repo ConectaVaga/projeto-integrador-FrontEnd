@@ -36,9 +36,9 @@ function ListaPostagem() {
     async function getAllPostagens() {
         await busca('/postagens', setPostagens, {
             headers: {
-                Authorization: token,
-            },
-        });
+                Authorization: token
+            }
+        })
     }
 
     useEffect(() => {

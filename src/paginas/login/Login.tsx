@@ -61,7 +61,7 @@ function Login() {
                 draggable: false,
                 theme: 'colored',
                 progress: undefined
-            })
+            });
         }catch(error){
             toast.error('Dados do usuário inconsistente. Verifique os campos', {
                 position: 'top-right',
@@ -72,7 +72,7 @@ function Login() {
                 draggable: false,
                 theme: 'colored',
                 progress: undefined
-            })
+            });
         }
     }
 

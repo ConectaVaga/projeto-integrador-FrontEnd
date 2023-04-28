@@ -50,9 +50,9 @@ function CadastroPostagem() {
             })
             history('/login');
         }
-    });
+    }, [token]);
 
-    function updateModel(event: ChangeEvent<HTMLInputElement>) {
+    function updatePost(event: ChangeEvent<HTMLInputElement>) {
         setPostagem({
             ...postagem,
             [event.target.name]: event.target.value,
@@ -166,9 +166,9 @@ function CadastroPostagem() {
                     <TextField
                         value={postagem.titulo}
                         onChange={(event: ChangeEvent<HTMLInputElement>) =>
-                            updateModel(event)
+                            updatePost(event)
                         }
-                        label="Titulo da postagem"
+                        label="Titulo"
                         name="titulo"
                         id="titulo"
                         variant="outlined"
@@ -177,9 +177,9 @@ function CadastroPostagem() {
                     <TextField
                         value={postagem.texto}
                         onChange={(event: ChangeEvent<HTMLInputElement>) =>
-                            updateModel(event)
+                            updatePost(event)
                         }
-                        label="Texto da postagem"
+                        label="texto"
                         name="texto"
                         id="texto"
                         variant="outlined"
@@ -190,7 +190,7 @@ function CadastroPostagem() {
                     <TextField
                         value={postagem.imagem}
                         onChange={(event: ChangeEvent<HTMLInputElement>) =>
-                            updateModel(event)
+                            updatePost(event)
                         }
                         label="URL da Imagem"
                         name="imagem"

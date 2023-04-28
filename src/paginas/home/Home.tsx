@@ -1,13 +1,40 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './Home.css';
 import { Button, Grid, Paper } from "@material-ui/core";
 import { Box } from "@mui/material"
 import Typography from '@mui/material/Typography';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import ListaPostagem from "../../components/postagens/listaPostagem/ListaPostagem";
 import ListaTema from "../../components/temas/listaTema/ListaTema";
+import { TokenState } from "../../store/tokens/TokensReducer";
+import { toast } from "react-toastify";
+import { useSelector } from "react-redux";
 
 function Home() {
+
+    const history = useNavigate();
+    
+    const token = useSelector<TokenState, TokenState['token']>(
+        (state) => state.token
+      )
+    
+    useEffect(() => {
+      if (token == "") {
+        toast.error('VocÊ precisa estar logado!', {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            });
+          history("/login")
+  
+      }
+     }, [token])
+     
     return (
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>

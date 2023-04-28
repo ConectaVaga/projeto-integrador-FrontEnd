@@ -16,6 +16,7 @@ import { TokenState } from "../../../store/tokens/TokensReducer";
 
 
 function ListaTema() {
+  
   const [temas, setTemas] = useState<Tema[]>([]);
 
   const token = useSelector<TokenState, TokenState["token"]>(
@@ -24,7 +25,7 @@ function ListaTema() {
 
   const history = useNavigate();
 
-  async function getTema() {
+  async function getAllTemas() {
     await busca("/temas", setTemas, {
       headers: {
         Authorization: token,
@@ -33,7 +34,7 @@ function ListaTema() {
   }
 
   useEffect(() => {
-    getTema();
+    getAllTemas();
   }, []);
 
   useEffect(() => {

@@ -21,21 +21,7 @@ function DeletarPostagem() {
     const {id} = useParams<{id: string}>()
   
     const [post, setPosts] = useState<Postagem>();
-  
-    async function getPostById(id: string) {
-      await buscaId(`/postagens/${id}`, setPosts, {
-        headers: {
-          Authorization: token
-        }
-      })
-    }
 
-    useEffect(() => {
-      if (id !== undefined){
-        getPostById(id)
-      }
-    })
-  
     useEffect(() => {
       if (token === '') { 
           toast.error('Você precisa estar logado!', {
@@ -52,6 +38,28 @@ function DeletarPostagem() {
       }
     }, [token])
   
+   /* useEffect(() => {
+      if (id !== undefined){
+        getPostById(id)
+      }
+    })*/
+
+// A ALANILISAR:
+    async function getPostById(id: string) {
+      await buscaId(`/postagens/${id}`, setPosts, {
+        headers: {
+          Authorization: token
+        }
+      })
+    }
+
+    useEffect(() => {
+      if (id !== undefined){
+        getPostById(id)
+      }
+    })
+  // ANALISAR GETPOST
+    
     function sim() {
       deleteId(`/postagem/${id}`, {
         headers: {

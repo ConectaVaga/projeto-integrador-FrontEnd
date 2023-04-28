@@ -41,7 +41,7 @@ function CadastroUsuario() {
 
     async function onSubmit(event: ChangeEvent<HTMLFormElement>) {
         event.preventDefault()
-        if (confirmarSenha === usuario.senha) {
+        if (confirmarSenha === usuario.senha && usuario.senha.length >= 8) {
             try {
                 await cadastroUsuario('/usuarios/cadastrar', usuario, setUsuarioResult)
                 toast.success('Usuário cadastrado com sucesso!', {
@@ -64,7 +64,7 @@ function CadastroUsuario() {
                     draggable: false,
                     theme: 'colored',
                     progress: undefined
-                })
+                });
             }
         } else {
             toast.error('As senhas não coincidem!', {
@@ -76,12 +76,12 @@ function CadastroUsuario() {
                 draggable: false,
                 theme: 'colored',
                 progress: undefined
-            })
+            });
             setConfirmarSenha('')
             setUsuario({
                 ...usuario,
                 senha: ''
-            })
+            });
         }
     }
 
