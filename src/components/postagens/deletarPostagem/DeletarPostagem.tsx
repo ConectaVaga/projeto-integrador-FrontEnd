@@ -61,7 +61,7 @@ function DeletarPostagem() {
   // ANALISAR GETPOST
     
     function sim() {
-      deleteId(`/postagem/${id}`, {
+      deleteId(`/postagens/${id}`, {
         headers: {
           Authorization: token
         }
@@ -76,7 +76,7 @@ function DeletarPostagem() {
         theme: 'colored',
         progress: undefined
     })
-      history('/postagem')
+      history('/postagens')
     }
   
     function nao(){

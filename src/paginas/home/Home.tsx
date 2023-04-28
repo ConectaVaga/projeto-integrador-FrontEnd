@@ -49,18 +49,17 @@ function Home() {
                         </Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
-                     
-                        <ModalPostagem />
-                        
+
                         <Box marginRight={1}>
                             <Link to={"/postagens"}>
                                 <Button variant="outlined" className='botao'> Ver Postagens</Button>
                             </Link>
                         </Box>
                         <Box>
-                            <Link to={"/formularioPostagem"}>
-                                <Button variant="outlined" className='botao'> Nova Postagem</Button>
-                            </Link>
+                            
+                                 <ModalPostagem />
+                             
+                         
                         </Box>
                         <Box>
                             <Link to={"/postagens"}>
