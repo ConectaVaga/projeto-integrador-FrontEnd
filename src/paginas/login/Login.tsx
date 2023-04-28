@@ -3,16 +3,22 @@ import { Grid } from '@material-ui/core'
 import { Box, Button, TextField, Typography } from '@mui/material'
 import React, { ChangeEvent, useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import useLocalStorage from 'react-use-localstorage'
 import UsuarioLogin from '../../models/UsuarioLogin'
 import { login } from '../../service/Service'
 import Usuario from '../../models/Usuario'
+import { toast } from 'react-toastify'
+import { useDispatch, useSelector } from 'react-redux'
+import { TokenState } from '../../store/tokens/TokensReducer'
+import { addToken } from '../../store/tokens/Action'
 
 
 function Login() {
 
     const history = useNavigate();
-    const [token, setToken] = useLocalStorage('token');
+    
+    const dispatch = useDispatch()
+
+    const [token, setToken] = useState('');
 
     const [userLogin, setUserLogin] = useState<UsuarioLogin>(
         {
@@ -36,6 +42,7 @@ function Login() {
 
     useEffect(()=>{
         if(token !== ''){
+        dispatch(addToken(token))
         history('/home')
         }
     }, [token])
@@ -45,9 +52,27 @@ function Login() {
         try{
             await login (`/usuarios/logar`, userLogin, setToken)
 
-            alert('Usuário logado com sucesso!')
+            toast.success('Usuário logado com sucesso!', {
+                position: 'top-right',
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: 'colored',
+                progress: undefined
+            })
         }catch(error){
-            alert('Dados do usuário são inconsistentes. Erro ao logar.')
+            toast.error('Dados do usuário inconsistente. Verifique os campos', {
+                position: 'top-right',
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: 'colored',
+                progress: undefined
+            })
         }
     }
 

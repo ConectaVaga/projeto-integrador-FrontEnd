@@ -13,16 +13,14 @@ import { busca } from "../../../service/Service";
 import "./ListaTema.css";
 import { useSelector } from "react-redux";
 import { TokenState } from "../../../store/tokens/TokensReducer";
-import useLocalStorage from "react-use-localstorage";
+
 
 function ListaTema() {
   const [temas, setTemas] = useState<Tema[]>([]);
 
-  // const token = useSelector<TokenState, TokenState["token"]>(
-  //   (state) => state.token
-  // );
-
-  const [token] = useLocalStorage('token');
+  const token = useSelector<TokenState, TokenState["token"]>(
+     (state) => state.token
+  );
 
   const history = useNavigate();
 
