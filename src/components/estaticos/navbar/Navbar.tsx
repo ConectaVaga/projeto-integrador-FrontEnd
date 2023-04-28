@@ -62,6 +62,7 @@ function goLogout() {
           </Link>
 
           <Box display="flex">
+
             <Link to="/home">
               <Box mx={1} className="cursor">
                 <Typography variant="subtitle1" color="inherit">
@@ -69,21 +70,25 @@ function goLogout() {
                 </Typography>
               </Box>
             </Link>
+            
             <Box mx={1} className="cursor">
               <Typography variant="subtitle1" color="inherit">
                 Postagens
               </Typography>
             </Box>
+            
             <Box mx={1} className="cursor">
               <Typography variant="subtitle1" color="inherit">
                 Temas
               </Typography>
             </Box>
+            
             <Box mx={1} className="cursor">
               <Typography variant="subtitle1" color="inherit">
                 Cadastrar Tema
               </Typography>
             </Box>
+            
             <Link to="/sobrenos">
               <Box mx={1} className="cursor">
                 <Typography variant="subtitle1" color="inherit">
@@ -91,6 +96,7 @@ function goLogout() {
                 </Typography>
               </Box>
             </Link>
+            
             <Link to="/sobrenos">
               <Box mx={1} className="cursor">
                 <Typography variant="subtitle1" color="inherit">
@@ -98,6 +104,7 @@ function goLogout() {
                 </Typography>
               </Box>
             </Link>
+
           </Box>
 
           <Box>
@@ -107,6 +114,7 @@ function goLogout() {
                 </Typography>
               </Box>
           </Box>
+
         </Box>
       </Toolbar>
     </AppBar>
