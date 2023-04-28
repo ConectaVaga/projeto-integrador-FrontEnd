@@ -172,6 +172,7 @@ function CadastroPostagem() {
                         name="titulo"
                         id="titulo"
                         variant="outlined"
+                        required
                         fullWidth
                     />
                     <TextField
@@ -185,6 +186,7 @@ function CadastroPostagem() {
                         variant="outlined"
                         fullWidth
                         multiline
+                        required
                         minRows={4}
                     />
                     <TextField
@@ -197,7 +199,6 @@ function CadastroPostagem() {
                         id="imagem"
                         variant="outlined"
                         fullWidth
-                        required
                         minRows={4}
                     />
 
