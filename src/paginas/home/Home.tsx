@@ -49,23 +49,12 @@ function Home() {
                         </Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
-
                         <Box marginRight={1}>
+                            <ModalPostagem />
+                        </Box>
                             <Link to={"/postagens"}>
                                 <Button variant="outlined" className='botao'> Ver Postagens</Button>
                             </Link>
-                        </Box>
-                        <Box>
-                            
-                                 <ModalPostagem />
-                             
-                         
-                        </Box>
-                        <Box>
-                            <Link to={"/postagens"}>
-                                <Button variant="outlined" className='botao'>Postagem Conecta</Button>
-                            </Link>
-                        </Box>
                     </Box>
                 </Grid>
                 <Grid item xs={6}>

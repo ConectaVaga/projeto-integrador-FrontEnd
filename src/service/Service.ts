@@ -15,9 +15,9 @@ export const cadastroUsuario = async(url: any, dados: any, setDado: any) => {
 }
 
 export const busca = async(url:any, setDado:any, headers: any) => {
-        const resposta = await api.get(url, headers)
-        setDado(resposta.data)
-    }
+    const resposta = await api.get(url, headers)
+    setDado(resposta.data)
+}
 
 export const buscaId = async(url:any, setDado:any, headers: any) => {
     const resposta = await api.get(url, headers)
