@@ -40,13 +40,6 @@ function Login() {
         })
     }
 
-    useEffect(()=>{
-        if(token !== ''){
-        dispatch(addToken(token))
-        history('/home')
-        }
-    }, [token])
-
     async function onSubmit(e: ChangeEvent<HTMLFormElement>){
         e.preventDefault();
         try{
@@ -61,7 +54,7 @@ function Login() {
                 draggable: false,
                 theme: 'colored',
                 progress: undefined
-            })
+            });
         }catch(error){
             toast.error('Dados do usuário inconsistente. Verifique os campos', {
                 position: 'top-right',
@@ -72,10 +65,17 @@ function Login() {
                 draggable: false,
                 theme: 'colored',
                 progress: undefined
-            })
+            });
         }
     }
 
+    useEffect(()=>{
+        if(token !== ''){
+        dispatch(addToken(token))
+        history('/home')
+        }
+    }, [token])
+    
     return (
         <>
             <Grid container direction='row' justifyContent='center' alignItems='center'>

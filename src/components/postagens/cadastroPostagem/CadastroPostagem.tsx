@@ -20,21 +20,7 @@ function CadastroPostagem() {
     const { id } = useParams<{ id: string }>();
 
     const [temas, setTemas] = useState<Tema[]>([]);
-
-    const [postagem, setPostagem] = useState<Postagem>({
-        id: 0,
-        titulo: '',
-        texto: '',
-        data: '',
-        imagem: '',
-        tema: null
-    });
-
-    const [tema, setTema] = useState<Tema>({
-        id: 0,
-        categoria: '',
-        nome: ''
-    });
+ 
 
     useEffect(() => {
         if (token === '') {
@@ -50,9 +36,39 @@ function CadastroPostagem() {
             })
             history('/login');
         }
+    }, [token]);
+
+    const [postagem, setPostagem] = useState<Postagem>({
+        id: 0,
+        titulo: '',
+        texto: '',
+        data: '',
+        imagem: '',
+        tema: null
     });
 
-    function updateModel(event: ChangeEvent<HTMLInputElement>) {
+
+    const [tema, setTema] = useState<Tema>({
+        id: 0,
+        categoria: '',
+        nome: ''
+    });
+
+    useEffect(() => {
+        setPostagem({
+            ...postagem,
+            tema: tema,
+        });
+    }, [tema]);
+    
+  /*  useEffect(() => {
+        getTemas();
+        if (id !== undefined) {
+          findByIdPostagem(id);
+        }
+      }, [id]);*/
+      
+    function updatePost(event: ChangeEvent<HTMLInputElement>) {
         setPostagem({
             ...postagem,
             [event.target.name]: event.target.value,
@@ -83,78 +99,49 @@ function CadastroPostagem() {
         }
     }, [id]);
 
-    useEffect(() => {
-        setPostagem({
-            ...postagem,
-            tema: tema,
-        });
-    }, [tema]);
+    
 
     async function onSubmit(event: ChangeEvent<HTMLFormElement>) {
         event.preventDefault();
-        
+    
         if (id !== undefined) {
-            try {
-                await put('/postagens', postagem, setPostagem, {
-                    headers: {
-                        Authorization: token,
-                    },
-                });
-                toast.success('Postagem atualizada com sucesso!', {
-                    position: 'top-right',
-                    autoClose: 2000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: false,
-                    draggable: false,
-                    theme: 'colored',
-                    progress: undefined
-                })
-                history('/postagens')
-            } catch (error) {
-                toast.error('Falha ao atualizar postagem!', {
-                    position: 'top-right',
-                    autoClose: 2000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: false,
-                    draggable: false,
-                    theme: 'colored',
-                    progress: undefined
-                })
-            }
+          put("/postagens", postagem, setPostagem, {
+            headers: {
+              Authorization: token,
+            },
+          });   toast.success('Postagem atualizada com sucesso', {
+            position: 'top-right',
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: 'colored',
+            progress: undefined
+        })
         } else {
-            try {
-                await post('/postagens', postagem, setPostagem, {
-                    headers: {
-                        Authorization: token,
-                    },
-                });
-                toast.success('Postagem cadastrada com sucesso!', {
-                    position: 'top-right',
-                    autoClose: 2000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: false,
-                    draggable: false,
-                    theme: 'colored',
-                    progress: undefined
-                })
-                history('/postagens')
-            } catch (error) {
-                toast.error('Falha ao cadastrar postagem!', {
-                    position: 'top-right',
-                    autoClose: 2000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: false,
-                    draggable: false,
-                    theme: 'colored',
-                    progress: undefined
-                })
-            }
+          post("/postagens", postagem, setPostagem, {
+            headers: {
+              Authorization: token,
+            },
+          });
+          toast.success('Postagem cadastrada com sucesso', {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            theme: 'colored',
+            progress: undefined
+            });
         }
-    }
+        back();
+      }
+    
+      function back() {
+        history("/postagens");
+      }
 
     return (
         <>
@@ -166,9 +153,9 @@ function CadastroPostagem() {
                     <TextField
                         value={postagem.titulo}
                         onChange={(event: ChangeEvent<HTMLInputElement>) =>
-                            updateModel(event)
+                            updatePost(event)
                         }
-                        label="Titulo da postagem"
+                        label="Titulo"
                         name="titulo"
                         id="titulo"
                         variant="outlined"
@@ -178,9 +165,9 @@ function CadastroPostagem() {
                     <TextField
                         value={postagem.texto}
                         onChange={(event: ChangeEvent<HTMLInputElement>) =>
-                            updateModel(event)
+                            updatePost(event)
                         }
-                        label="Texto da postagem"
+                        label="texto"
                         name="texto"
                         id="texto"
                         variant="outlined"
@@ -192,7 +179,7 @@ function CadastroPostagem() {
                     <TextField
                         value={postagem.imagem}
                         onChange={(event: ChangeEvent<HTMLInputElement>) =>
-                            updateModel(event)
+                            updatePost(event)
                         }
                         label="URL da Imagem"
                         name="imagem"

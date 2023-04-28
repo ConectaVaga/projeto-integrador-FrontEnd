@@ -1,13 +1,41 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './Home.css';
 import { Button, Grid, Paper } from "@material-ui/core";
 import { Box } from "@mui/material"
 import Typography from '@mui/material/Typography';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import ListaPostagem from "../../components/postagens/listaPostagem/ListaPostagem";
 import ListaTema from "../../components/temas/listaTema/ListaTema";
+import { TokenState } from "../../store/tokens/TokensReducer";
+import { toast } from "react-toastify";
+import { useSelector } from "react-redux";
+import ModalPostagem from "../../components/postagens/modalPostagem/ModalPostagem";
 
 function Home() {
+
+    const history = useNavigate();
+
+    const token = useSelector<TokenState, TokenState['token']>(
+        (state) => state.token
+    )
+
+    useEffect(() => {
+        if (token == "") {
+            toast.error('VocÊ precisa estar logado!', {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+            });
+            history("/login")
+
+        }
+    }, [token])
+
     return (
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
@@ -17,18 +45,26 @@ function Home() {
                             Seja bem-vindo!
                         </Typography>
                         <Typography variant="h5" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>
-                        O que gostaria de compartilhar?
+                            O que gostaria de compartilhar?
                         </Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
+
                         <Box marginRight={1}>
-                            <Button variant="outlined" className='botao'> Ver Postagens</Button>
+                            <Link to={"/postagens"}>
+                                <Button variant="outlined" className='botao'> Ver Postagens</Button>
+                            </Link>
                         </Box>
                         <Box>
-                            <Button variant="outlined" className='botao'> Nova Postagem</Button>
+                            
+                                 <ModalPostagem />
+                             
+                         
                         </Box>
                         <Box>
-                            <Button variant="outlined" className='botao'>Postagem Conecta</Button>
+                            <Link to={"/postagens"}>
+                                <Button variant="outlined" className='botao'>Postagem Conecta</Button>
+                            </Link>
                         </Box>
                     </Box>
                 </Grid>
@@ -38,7 +74,7 @@ function Home() {
                 <Grid xs={12} className='postagens'>
                     <ListaPostagem />
                 </Grid>
-            </Grid>
+            </Grid >
         </>
     );
 }

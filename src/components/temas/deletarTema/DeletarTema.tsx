@@ -22,6 +22,7 @@ function DeletarTema() {
   const [tema, setTema] = useState<Tema>()
 
   useEffect(() => {
+
       if (token == "") {
         toast.error('Você precisa estar logado!', {
           position: 'top-right',
@@ -32,7 +33,7 @@ function DeletarTema() {
           draggable: false,
           theme: 'colored',
           progress: undefined
-      })
+      });
           history("/login")
   
       }

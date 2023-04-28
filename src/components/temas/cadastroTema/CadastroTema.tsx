@@ -10,6 +10,7 @@ import { toast } from "react-toastify";
 
 
 function CadastroTema() {
+
   const history = useNavigate();
 
   const { id } = useParams<{ id: string }>();
@@ -22,6 +23,7 @@ function CadastroTema() {
     id: 0,
     categoria: '',
     nome: ''
+    /*descricao: ''*/  
   });
 
   useEffect(() => {
@@ -100,7 +102,7 @@ function CadastroTema() {
     })
       history("/temas");
     }
-    back();
+    back()
   }
 
   function back() {
