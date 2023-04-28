@@ -59,13 +59,18 @@ function Navbar() {
           </Link>
 
           <Box display="flex">
+
             <Link to={"/home"}>
+
+
+ 
               <Box mx={1} className="cursor">
                 <Typography variant="subtitle1" color="inherit">
                   Home
                 </Typography>
               </Box>
             </Link>
+
 
             <Link to={"/postagens"}>
               <Box mx={1} className="cursor">
@@ -90,7 +95,7 @@ function Navbar() {
                 </Typography>
               </Box>
             </Link >
-
+            
             <Link to="/sobrenos">
               <Box mx={1} className="cursor">
                 <Typography variant="subtitle1" color="inherit">
@@ -99,7 +104,7 @@ function Navbar() {
               </Box>
 
             </Link>
-
+            
             <Link to="/sobrenos">
               <Box mx={1} className="cursor">
                 <Typography variant="subtitle1" color="inherit">
@@ -107,6 +112,7 @@ function Navbar() {
                 </Typography>
               </Box>
             </Link>
+
           </Box>
 
           <Box>
@@ -116,6 +122,7 @@ function Navbar() {
               </Typography>
             </Box>
           </Box>
+
         </Box>
       </Toolbar>
     </AppBar>
