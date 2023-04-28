@@ -1,0 +1,17 @@
+.btnModal{
+    border-radius: 5px !important;
+    color: white !important;
+    background-color: rgb(158, 65, 96) !important;
+    width: 10vw;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #8e9bce;
+    width: 30vw;
+    height: 100vh;
+    border-radius: 2vw;
+}
