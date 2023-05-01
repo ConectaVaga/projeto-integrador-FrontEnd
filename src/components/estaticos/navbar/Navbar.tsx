@@ -56,11 +56,11 @@ function Navbar() {
             </Box>
           </Link>
 
-          <Box display="flex">
+          <Box display="flex" alignItems='center'>
 
             <Link to={"/home"}>
-              <Box mx={4} className="cursor">
-                <Typography variant="subtitle1" color="inherit">
+              <Box mx={5} className="cursor">
+                <Typography variant="h6" color="inherit">
                   Home
                 </Typography>
               </Box>
@@ -68,32 +68,32 @@ function Navbar() {
 
 
             <Link to={"/postagens"}>
-              <Box mx={4} className="cursor">
-                <Typography variant="subtitle1" color="inherit">
+              <Box mx={5} className="cursor">
+                <Typography variant="h6" color="inherit">
                   Postagens
                 </Typography>
               </Box>
             </Link>
 
             <Link to={"/temas"}>
-              <Box mx={4} className="cursor">
-                <Typography variant="subtitle1" color="inherit">
+              <Box mx={5} className="cursor">
+                <Typography variant="h6" color="inherit">
                   Temas
                 </Typography>
               </Box>
             </Link>
 
             <Link to={"/formularioTema"}>
-              <Box mx={4} className="cursor">
-                <Typography variant="subtitle1" color="inherit">
+              <Box mx={5} className="cursor">
+                <Typography variant="h6" color="inherit">
                   Cadastrar Tema
                 </Typography>
               </Box>
             </Link >
             
             <Link to="/sobrenos">
-              <Box mx={4} className="cursor">
-                <Typography variant="subtitle1" color="inherit">
+              <Box mx={5} className="cursor">
+                <Typography variant="h6" color="inherit">
                   Sobre
                 </Typography>
               </Box>
@@ -101,8 +101,8 @@ function Navbar() {
             </Link>
             
             <Link to="/sobrenos">
-              <Box mx={4} className="cursor">
-                <Typography variant="subtitle1" color="inherit">
+              <Box mx={5} className="cursor">
+                <Typography variant="h6" color="inherit">
                   Contato
                 </Typography>
               </Box>

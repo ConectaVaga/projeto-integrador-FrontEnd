@@ -8,7 +8,7 @@
 }
 
 .Abar{
-    background-color: #114880;
+    background-color: #114880 !important;
 }
 
 .icon{
@@ -21,4 +21,8 @@
     align-items: center !important;
     width: 80px;
     height: 80px;
+}
+
+.textos{
+    font-size: 100px;
 }

@@ -3,7 +3,7 @@
 }
 
 .boxPrincipal {
-    background-color: #114880; 
+    background-color: #114880 !important; 
     height: 100%
 }
 
