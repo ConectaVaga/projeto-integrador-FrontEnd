@@ -1,8 +1,12 @@
+.cursor{
+    cursor: pointer;
+}
+
 .btnModal{
-    border-radius: 5px !important;
-    color: white !important;
-    background-color: rgb(158, 65, 96) !important;
-    width: 10vw;
+    
+    border-color: black;
+    background-color: #a8dadc !important;
+    
 }
 
 .modal {
@@ -10,8 +14,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #8e9bce;
+    background-color: white;
     width: 30vw;
     height: 100vh;
-    border-radius: 2vw;
 }
