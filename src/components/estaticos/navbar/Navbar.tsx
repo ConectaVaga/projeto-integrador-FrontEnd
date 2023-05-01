@@ -64,56 +64,6 @@ function Navbar() {
               </Box>
             </Link>
 
-            <Box display="flex">
-              <Link to={"/home"} className="linknav">
-                <Box mx={1} className="cursor">
-                  <Typography variant="subtitle1" color="inherit">
-                    Home
-                  </Typography>
-                </Box>
-              </Link>
-
-              <Link to={"/postagens"} className="linknav">
-                <Box mx={1} className="cursor">
-                  <Typography variant="subtitle1" color="inherit">
-                    Postagens
-                  </Typography>
-                </Box>
-              </Link>
-
-              <Link to={"/temas"} className="linknav">
-                <Box mx={1} className="cursor">
-                  <Typography variant="subtitle1" color="inherit">
-                    Temas
-                  </Typography>
-                </Box>
-              </Link>
-
-              <Link to={"/formularioTema"} className="linknav">
-                <Box mx={1} className="cursor">
-                  <Typography variant="subtitle1" color="inherit">
-                    Cadastrar Tema
-                  </Typography>
-                </Box>
-              </Link>
-
-              <Link to="/sobrenos" className="linknav">
-                <Box mx={1} className="cursor">
-                  <Typography variant="subtitle1" color="inherit">
-                    Sobre
-                  </Typography>
-                </Box>
-              </Link>
-
-              <Link to="/sobrenos" className="linknav">
-                <Box mx={1} className="cursor">
-                  <Typography variant="subtitle1" color="inherit">
-                    Contato
-                  </Typography>
-                </Box>
-              </Link>
-            </Box>
-
             <Link to={"/postagens"}>
               <Box mx={5} className="cursor">
                 <Typography variant="h6" color="inherit">
@@ -166,12 +116,16 @@ function Navbar() {
 
             </Box>
           </Box>
+          </Box>
         </Toolbar>
       </AppBar>
-    );
   }
 
-  return <>{navbarComponent}</>;
+  return (
+    <>
+      {navbarComponent}
+    </>
+  );
 }
 
 export default Navbar;

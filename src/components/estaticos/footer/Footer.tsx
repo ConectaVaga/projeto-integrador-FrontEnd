@@ -89,11 +89,15 @@ function Footer() {
               </a>
             </Box>
           </Box>
+          </Box>
         </Grid>
       </Grid>
-    );
   }
-  return <>{footerComponent}</>;
+  return (
+    <>
+      {footerComponent}
+    </>
+  )
 }
 
 export default Footer;

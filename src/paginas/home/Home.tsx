@@ -57,9 +57,9 @@ function Home() {
                             </Link>
                     </Box>
                 </Grid>
-                <Grid item xs={6}>
+                {/* <Grid item xs={6}>
                     <img src="https://ik.imagekit.io/6kg1q0s1r/Writer_s_block-amico.png?updatedAt=1681323288251" alt="Imagem Capa" className="fotoHome" />
-                </Grid>
+                </Grid> */}
                 <Grid xs={12} className='postagens'>
                     <ListaPostagem />
                 </Grid>
