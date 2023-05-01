@@ -42,7 +42,7 @@ function Footer() {
               Siga-nos nas redes sociais
             </Typography>
           </Box>
-          <Box display="flex" alignItems="center" justifyContent="center">
+          <Box display="flex" alignItems="right" justifyContent="center">
             <a href="https://github.com/ConectaVaga" target="_blank">
               <GitHubIcon className="icones" />
             </a>
@@ -57,7 +57,7 @@ function Footer() {
               gutterBottom
             >
               {" "}
-              2023 Copyright
+              ©2023 ConectaVaga. Todos os direitos reservados.
             </Typography>
           </Box>
           <Box>

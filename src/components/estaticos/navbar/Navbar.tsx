@@ -48,12 +48,10 @@ function Navbar() {
             <Box className="cursor">
               <Typography variant="h5" color="inherit">
                 <img
-                  src="https://ik.imagekit.io/6kg1q0s1r/Logo_ConectVagas_1.png?updatedAt=1681492211384"
+                  src="https://ik.imagekit.io/vfpark/conecta_smj6GfD0l?updatedAt=1682895937850"
                   alt=""
-                  width={30}
-                  height={25}
-                />{" "}
-                ConectaVaga
+                  className="icon"
+                />
               </Typography>
             </Box>
           </Link>
@@ -61,10 +59,7 @@ function Navbar() {
           <Box display="flex">
 
             <Link to={"/home"}>
-
-
- 
-              <Box mx={1} className="cursor">
+              <Box mx={4} className="cursor">
                 <Typography variant="subtitle1" color="inherit">
                   Home
                 </Typography>
@@ -73,7 +68,7 @@ function Navbar() {
 
 
             <Link to={"/postagens"}>
-              <Box mx={1} className="cursor">
+              <Box mx={4} className="cursor">
                 <Typography variant="subtitle1" color="inherit">
                   Postagens
                 </Typography>
@@ -81,7 +76,7 @@ function Navbar() {
             </Link>
 
             <Link to={"/temas"}>
-              <Box mx={1} className="cursor">
+              <Box mx={4} className="cursor">
                 <Typography variant="subtitle1" color="inherit">
                   Temas
                 </Typography>
@@ -89,7 +84,7 @@ function Navbar() {
             </Link>
 
             <Link to={"/formularioTema"}>
-              <Box mx={1} className="cursor">
+              <Box mx={4} className="cursor">
                 <Typography variant="subtitle1" color="inherit">
                   Cadastrar Tema
                 </Typography>
@@ -97,7 +92,7 @@ function Navbar() {
             </Link >
             
             <Link to="/sobrenos">
-              <Box mx={1} className="cursor">
+              <Box mx={4} className="cursor">
                 <Typography variant="subtitle1" color="inherit">
                   Sobre
                 </Typography>
@@ -106,7 +101,7 @@ function Navbar() {
             </Link>
             
             <Link to="/sobrenos">
-              <Box mx={1} className="cursor">
+              <Box mx={4} className="cursor">
                 <Typography variant="subtitle1" color="inherit">
                   Contato
                 </Typography>
@@ -115,10 +110,11 @@ function Navbar() {
 
           </Box>
 
+          
           <Box>
-            <Box mx={1} className="cursor" onClick={goLogout}>
-              <Typography variant="subtitle1" color="inherit">
-                Logout
+            <Box mx={1} className="logout" onClick={goLogout} display={"flex"} justifyContent={"space-between"} width={"100%"}>
+              <Typography variant="h5" color="inherit">
+                <img src="https://ik.imagekit.io/vfpark/logouts2.png?updatedAt=1682899164488" alt=""/>
               </Typography>
             </Box>
           </Box>

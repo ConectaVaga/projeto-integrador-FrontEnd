@@ -3,9 +3,22 @@
 }
 .cursor{
     cursor: pointer;
-    color: white;
+    color: white !important;
+    text-align: center;
 }
 
 .Abar{
-    background-color: #0A0840;
+    background-color: #114880;
+}
+
+.icon{
+    align-items: center;
+    width: 150px;
+    height: 80px;
+}
+
+.logout{
+    align-items: center !important;
+    width: 80px;
+    height: 80px;
 }

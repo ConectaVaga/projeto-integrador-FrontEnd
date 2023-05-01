@@ -1,9 +1,9 @@
 .logo{
-    color: #0A0840 !important;
+    color: white !important;
 }
 
 .boxPrincipal {
-    background-color: #1d3557; 
+    background-color: #114880; 
     height: 100%
 }
 
@@ -14,4 +14,8 @@
 .icones {
     font-size: 30; 
     color: white
+}
+
+.boxRedes{
+    
 }
