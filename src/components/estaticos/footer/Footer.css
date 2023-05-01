@@ -1,17 +1,24 @@
-.logo{
-    color: #0A0840 !important;
-}
-
 .boxPrincipal {
-    background-color: #1d3557; 
-    height: 100%
+background-color: #114880; 
+height: 50%;
+}
+.medias-socias{ 
+  color: #fff;
+  font-size: 20px;
+  margin-left: 950px;
 }
 
-.descricao {
-    color: white
+.descricao2{ 
+font: size 50px;
+color: white !important;
+align-items: center;
+font-style: normal;
+padding: 25px;
 }
 
-.icones {
-    font-size: 30; 
-    color: white
+.container{
+font-size: 16px;
+width: 450px;
+height: 65px;
+color: white;
 }

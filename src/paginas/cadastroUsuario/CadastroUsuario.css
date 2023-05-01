@@ -1,12 +1,59 @@
-.fotoCadastroUsuario{
-    background-image: url(https://ik.imagekit.io/6kg1q0s1r/Mobile_login-pana.png?updatedAt=1681416802927);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 100vh;
-    width: 100vh;
+.imagemLogo{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left: 20px;
+    top: 05px;
+    background-image: url(https://ik.imagekit.io/ohu04lxwc/LOGO.png?updatedAt=1682438600432);
+
+}.textocadastro{
+    text-align: center;
+    font-weight: bold !important;
+    color: #CD0045!important;
+    
+}
+
+.p{
+position: absolute;
+width: 410px;
+font-weight: regular !important;
+color: #000000;
+width: 600px;
+height: 600px;
+left:690px;
+top: 50px;
+}
+
+#nome{
+    background: #EBF2F2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+#usuario{
+    background: #EBF2F2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+#senha{
+    background: #EBF2F2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+#confirmarSenha{
+background: #EBF2F2;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+}
+#foto{
+background: #EBF2F2;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
 }
 
 .botaoCancelar {
-    margin-right: 20px !important;    
-}
+    margin-right: 20px !important;
+    background: #F23005;     
+    }
+.botaoCadastrar {
+     background: #CD0045 !important;
+    }

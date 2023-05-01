@@ -9,3 +9,15 @@
 .Abar{
     background-color: #0A0840;
 }
+
+.logoNav{
+    width: 90px;
+    height: 100px;
+}
+
+.linknav{
+    align-items: center;
+    padding: 30px;
+    margin-top: 10px;
+    position: static;
+}

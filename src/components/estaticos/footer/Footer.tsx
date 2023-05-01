@@ -8,80 +8,80 @@ import { useDispatch, useSelector } from "react-redux";
 import { TokenState } from "../../../store/tokens/TokensReducer";
 
 function Footer() {
-
   const dispatch = useDispatch();
 
-  const token = useSelector<TokenState, TokenState['token']>(
-      (state) => state.token
-  )
+  const token = useSelector<TokenState, TokenState["token"]>(
+    (state) => state.token
+  );
 
   let footerComponent;
 
-  if(token !== '') {
-      footerComponent = <Grid
-      container
-      direction="row"
-      justifyContent="center"
-      alignItems="center"
-    >
-      <Grid alignItems="center" item xs={12}>
-        <Box className="boxPrincipal">
-          <Box
-            paddingTop={1}
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Typography
-              variant="h5"
-              align="center"
-              gutterBottom
-              className="descricao"
+  if (token !== "") {
+    footerComponent = (
+      <Grid
+        container
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+      >
+        <Grid alignItems="center" item xs={12}>
+          <Box className="boxPrincipal">
+            <Box
+              paddingTop={1}
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
             >
-              {" "}
-              Siga-nos nas redes sociais
-            </Typography>
-          </Box>
-          <Box display="flex" alignItems="center" justifyContent="center">
-            <a href="https://github.com/ConectaVaga" target="_blank">
-              <GitHubIcon className="icones" />
-            </a>
-          </Box>
-        </Box>
-        <Box className="boxPrincipal">
-          <Box paddingTop={1}>
-            <Typography
-              className="logo"
-              variant="subtitle2"
-              align="center"
-              gutterBottom
-            >
-              {" "}
-              2023 Copyright
-            </Typography>
-          </Box>
-          <Box>
-            <a target="blank" href="">
               <Typography
-                variant="subtitle2"
-                gutterBottom
-                className="descricao"
+                variant="h5"
                 align="center"
+                gutterBottom
+                className="medias-socias"
               >
                 {" "}
-                Projeto integrador do grupo 3
+                Siga-nos
               </Typography>
-            </a>
+            </Box>
+            <Box display="flex" alignItems="center" justifyContent="center">
+              <a href="https://github.com/ConectaVaga" target="_blank">
+                <GitHubIcon className="medias-socias" />
+              </a>
+            </Box>
           </Box>
-        </Box>
+          <Box className="boxPrincipal">
+            <Box paddingTop={1}>
+              <Typography
+                className="informcontato"
+                variant="subtitle2"
+                align="center"
+                gutterBottom
+              >
+                {" "}
+                <div className="container">
+                  <h2>Fale conosco</h2>
+                  <p>vagaconecta@gmail.com</p>
+                </div>
+              </Typography>
+            </Box>
+            <Box>
+              <a target="blank" href="">
+                <Typography
+                  variant="subtitle2"
+                  gutterBottom
+                  className="descricao2"
+                  align="center"
+                >
+                  {" "}
+                  ©2023 ConectaVaga.Todos os direitos reservados.
+                </Typography>
+              </a>
+            </Box>
+          </Box>
+        </Grid>
       </Grid>
-    </Grid>
+    );
   }
-  return (
-    <>
-      {footerComponent}
-    </>
-  )
+  return <>{footerComponent}</>;
 }
 
 export default Footer;
