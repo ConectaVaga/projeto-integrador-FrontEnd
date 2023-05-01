@@ -8,12 +8,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { TokenState } from "../../../store/tokens/TokensReducer";
 
 function Footer() {
-
   const dispatch = useDispatch();
 
-  const token = useSelector<TokenState, TokenState['token']>(
-      (state) => state.token
-  )
+  const token = useSelector<TokenState, TokenState["token"]>(
+    (state) => state.token
+  );
 
   let footerComponent;
 
@@ -59,29 +58,42 @@ function Footer() {
               {" "}
               ©2023 ConectaVaga. Todos os direitos reservados.
             </Typography>
+            
           </Box>
-          <Box>
-            <a target="blank" href="">
+          <Box className="boxPrincipal">
+            <Box paddingTop={1}>
               <Typography
+                className="informcontato"
                 variant="subtitle2"
-                gutterBottom
-                className="descricao"
                 align="center"
+                gutterBottom
               >
                 {" "}
-                Projeto integrador do grupo 3
+                <div className="container">
+                  <h2>Fale conosco</h2>
+                  <p>vagaconecta@gmail.com</p>
+                </div>
               </Typography>
-            </a>
+            </Box>
+            <Box>
+              <a target="blank" href="">
+                <Typography
+                  variant="subtitle2"
+                  gutterBottom
+                  className="descricao2"
+                  align="center"
+                >
+                  {" "}
+                  ©2023 ConectaVaga.Todos os direitos reservados.
+                </Typography>
+              </a>
+            </Box>
           </Box>
-        </Box>
+        </Grid>
       </Grid>
-    </Grid>
+    );
   }
-  return (
-    <>
-      {footerComponent}
-    </>
-  )
+  return <>{footerComponent}</>;
 }
 
 export default Footer;

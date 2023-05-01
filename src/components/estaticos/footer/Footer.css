@@ -5,13 +5,18 @@
 .boxPrincipal {
     background-color: #114880 !important; 
     height: 100%
+
+.descricao2{ 
+font: size 50px;
+color: white !important;
+align-items: center;
+font-style: normal;
+padding: 25px;
 }
 
-.descricao {
-    color: white
-}
-
-.icones {
-    font-size: 30; 
-    color: white
+.container{
+font-size: 16px;
+width: 450px;
+height: 65px;
+color: white;
 }
