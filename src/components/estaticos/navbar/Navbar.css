@@ -3,21 +3,27 @@
 }
 .cursor{
     cursor: pointer;
-    color: white;
+    color: white !important;
+    text-align: center;
 }
 
 .Abar{
-    background-color: #0A0840;
+    background-color: #114880 !important;
 }
 
-.logoNav{
-    width: 90px;
-    height: 100px;
-}
-
-.linknav{
+.icon{
     align-items: center;
-    padding: 30px;
-    margin-top: 10px;
-    position: static;
+    width: 150px;
+    height: 80px;
 }
+
+.logout{
+    align-items: center !important;
+    width: 80px;
+    height: 80px;
+}
+
+.textos{
+    font-size: 100px;
+}
+

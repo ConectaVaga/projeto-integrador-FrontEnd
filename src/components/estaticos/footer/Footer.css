@@ -1,12 +1,10 @@
+.logo{
+    color: white !important;
+}
+
 .boxPrincipal {
-background-color: #114880; 
-height: 50%;
-}
-.medias-socias{ 
-  color: #fff;
-  font-size: 20px;
-  margin-left: 950px;
-}
+    background-color: #114880 !important; 
+    height: 100%
 
 .descricao2{ 
 font: size 50px;

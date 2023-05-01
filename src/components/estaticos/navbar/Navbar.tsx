@@ -37,22 +37,29 @@ function Navbar() {
 
   var navbarComponent;
 
-  if (token !== "") {
-    navbarComponent = (
-      <AppBar position="static" className="Abar">
-        <Toolbar variant="dense">
-          <Box display={"flex"} justifyContent={"space-between"} width={"100%"}>
+  if (token !== '') {
+    navbarComponent = <AppBar position="static" className="Abar">
+      <Toolbar variant="dense">
+        <Box display={"flex"} justifyContent={"space-between"} width={"100%"}>
+          <Link to={"/home"}>
+            <Box className="cursor">
+              <Typography variant="h5" color="inherit">
+                <img
+                  src="https://ik.imagekit.io/vfpark/conecta_smj6GfD0l?updatedAt=1682895937850"
+                  alt=""
+                  className="icon"
+                />
+              </Typography>
+            </Box>
+          </Link>
+
+          <Box display="flex" alignItems='center'>
+
             <Link to={"/home"}>
-              <Box className="cursor">
-                <Typography variant="h5" color="inherit">
-                  <img
-                    src="/src/assets/logo/Logo_ConectVagas.png"
-                    className="logoNav"
-                    alt=""
-                    width={30}
-                    height={25}
-                  />{" "}
-                  {/*{ConectaVaga}*/}
+              <Box mx={5} className="cursor">
+                <Typography variant="h6" color="inherit">
+                  Home
+
                 </Typography>
               </Box>
             </Link>
@@ -107,12 +114,56 @@ function Navbar() {
               </Link>
             </Box>
 
-            <Box>
-              <Box mx={1} className="cursor" onClick={goLogout}>
-                <Typography variant="subtitle1" color="inherit">
-                  Logout
+            <Link to={"/postagens"}>
+              <Box mx={5} className="cursor">
+                <Typography variant="h6" color="inherit">
+                  Postagens
                 </Typography>
               </Box>
+            </Link>
+
+            <Link to={"/temas"}>
+              <Box mx={5} className="cursor">
+                <Typography variant="h6" color="inherit">
+                  Temas
+                </Typography>
+              </Box>
+            </Link>
+
+            <Link to={"/formularioTema"}>
+              <Box mx={5} className="cursor">
+                <Typography variant="h6" color="inherit">
+                  Cadastrar Tema
+                </Typography>
+              </Box>
+            </Link >
+            
+            <Link to="/sobrenos">
+              <Box mx={5} className="cursor">
+                <Typography variant="h6" color="inherit">
+                  Sobre
+                </Typography>
+              </Box>
+
+            </Link>
+            
+            <Link to="/sobrenos">
+              <Box mx={5} className="cursor">
+                <Typography variant="h6" color="inherit">
+                  Contato
+                </Typography>
+              </Box>
+            </Link>
+
+          </Box>
+
+          
+          <Box>
+            <Box mx={1} className="logout" onClick={goLogout} display={"flex"} justifyContent={"space-between"} width={"100%"}>
+              <Typography variant="h5" color="inherit">
+                <img src="https://ik.imagekit.io/vfpark/logouts2.png?updatedAt=1682899164488" alt=""/>
+              </Typography>
+
             </Box>
           </Box>
         </Toolbar>
