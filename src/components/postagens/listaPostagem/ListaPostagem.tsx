@@ -60,6 +60,13 @@ function ListaPostagem() {
                             <Typography variant="body1" component="p">
                                 Tema: {post.tema?.categoria}
                             </Typography>
+
+                            <Typography variant="body1" component="p">
+                                Postado por: {post.usuario?.nome}
+                            </Typography>
+
+                            <img src={post.usuario?.foto} alt={post.usuario?.nome} />
+
                             <Typography variant="body1" component="p">
                                 {/* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat */}
                                 Data: {Intl.DateTimeFormat('pt-BR', { dateStyle: 'full', timeStyle: 'medium' }).format(new Date(post.data))}

@@ -17,82 +17,85 @@ function Footer() {
   let footerComponent;
 
   if(token !== '') {
-      footerComponent = <Grid
-      container
-      direction="row"
-      justifyContent="center"
-      alignItems="center"
-    >
-      </Grid>
-
-return (
-    <>
-      <Grid
+      footerComponent = <><Grid
         container
         direction="row"
-        justifyContent="space-around"
+        justifyContent="center"
         alignItems="center"
-        className="boxPrincipal"
       >
-        <Grid item xs={4}>
-          <Box
+      </Grid><>
+          <Grid
+            container
+            direction="row"
+            justifyContent="space-around"
+            alignItems="center"
+            className="boxPrincipal"
+          >
+            <Grid item xs={4}>
+              <Box
                 paddingTop={1}
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
                 flexDirection={"column"}>
-                  <Typography
-                    variant="h5"
-                    align="center"
-                    gutterBottom
-                    className="logo">
-                    Fale Conosco
-                  </Typography>
-                  <Typography variant="subtitle1" className="logo">
-                    conectavagas@gmail.com
-                  </Typography>
-          </Box>
-        </Grid> 
-        <Grid item xs={4}>
-          <Box display="flex" alignItems="center" justifyContent="center" marginTop={1} flexDirection={"column"}>
-            <img
-              src="https://ik.imagekit.io/vfpark/conecta_smj6GfD0l?updatedAt=1682895937850"
-              alt="" width="160" height="100"/>
-            <Typography className="descricao" variant="subtitle2" color="white">
-              ©2023 ConectaVaga. Todos os direitos reservados.
-            </Typography>   
-          </Box>
-        </Grid>
-        <Grid item xs={4}>
-          <Box
-                  paddingTop={1}
-                  display="flex"
-                  alignItems="center"
-                  justifyContent="center"
-                  flexDirection={"column"}>
-                    <Typography
-                      variant="h5"
-                      align="center"
-                      gutterBottom
-                      className="logo">
-                      Siga-nos
-                    </Typography>
+                <Typography
+                  variant="h5"
+                  align="center"
+                  gutterBottom
+                  className="logo">
+                  Fale Conosco
+                </Typography>
+                <Typography variant="subtitle1" className="logo">
+                  conectavagas@gmail.com
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={4}>
+              <Box display="flex" alignItems="center" justifyContent="center" marginTop={1} flexDirection={"column"}>
+                <img
+                  src="https://ik.imagekit.io/vfpark/conecta_smj6GfD0l?updatedAt=1682895937850"
+                  alt="" width="160" height="100" />
+                <Typography className="descricao" variant="subtitle2" color="white">
+                  ©2023 ConectaVaga. Todos os direitos reservados.
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={4}>
+              <Box
+                paddingTop={1}
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
+                flexDirection={"column"}>
+                <Typography
+                  variant="h5"
+                  align="center"
+                  gutterBottom
+                  className="logo">
+                  Siga-nos
+                </Typography>
 
-                    <Box display="flex" alignItems="right" justifyContent="center">
-                    <a href="https://github.com/ConectaVaga" target="_blank">
-                    <Typography variant="subtitle1" className="logo" color="black">
+                <Box display="flex" alignItems="right" justifyContent="center">
+                  <a href="https://github.com/ConectaVaga" target="_blank">
+                    <Typography variant="subtitle1" className="logo">
                       <GitHubIcon /> @ConectaVaga
                     </Typography>
-                    </a>
-                    </Box>
-            </Box>
-        </Grid> 
+                  </a>
+                </Box>
+              </Box>
+            </Grid>
 
-      
-      </Grid>
-    </>
-  );
+
+          </Grid>
+        </></>
 }
+
+return (
+  <>
+    {footerComponent}
+  </>
+)
+
 }
 
 export default Footer;

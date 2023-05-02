@@ -1,4 +1,4 @@
-import {Action} from './Action'
+import {Action} from './action'
 
 export interface TokenState {
     token: string
@@ -15,9 +15,9 @@ export const tokenReducer = (state: TokenState = initialState, action: Action) =
         case 'ADD_TOKEN': {
             return {token: action.payload, id: state.id}
         } 
-       /* case 'ADD_ID' : {
+        case 'ADD_ID' : {
             return{id: action.payload, token: state.token}
-        }*/
+        }
 
         default: return state
     }
