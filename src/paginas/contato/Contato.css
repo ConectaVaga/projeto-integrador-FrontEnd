@@ -1,0 +1,112 @@
+
+
+.tituloctt{
+    text-align: center;
+    font-size: 7vh !important;
+    color: #114880;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ 
+    padding: 8px;
+}
+
+.textoctt{
+    text-align: center;
+    text-align: left;
+    
+
+}
+.textoConjunto{
+ 
+    margin: 0px 99  px 0px;
+    padding: 1vh;
+    border-radius: 3%;
+}
+
+.container{
+    margin-top: 2vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.integrantes{
+
+    width: 150px;
+    height: 184.5px;
+    border-radius: 5%;
+    background-color: rgb(235, 242, 242);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 5px 25px;
+
+
+}
+
+.foto img{
+width: 110px;
+height: 110px;
+border-radius: 40%;
+display: inline block;
+margin-bottom: 0px;
+z-index: 1;
+position:relative;
+
+-webkit-box-shadow: -1px 3px 5px -1px rgba(0,0,0,0.29);
+-moz-box-shadow: -1px 3px 5px -1px rgba(0,0,0,0.29);
+box-shadow: -1px 3px 5px -1px rgba(0,0,0,0.29);
+
+}
+
+.integrantes .foto::before{
+content: "";
+width: 100%;
+height: 0;
+border-radius: 50%;
+background: rgb(0, 84, 174);
+position: absolute;
+bottom: 135%;
+right: 0;
+left: 0;
+opacity: 0.2;
+transform: scale(3);
+transition: all 0.5s linear 0s;
+}
+
+.integrantes:hover .foto::before{
+    height: 100%;
+}
+
+.social:hover{
+    transition: 500ms;
+    background-color: gainsboro;
+    border-radius: 25%;
+}
+
+.integrantes .foto::after{
+content: "";
+width: 100%;
+height: 0;
+border-radius: 50%;
+background:red ;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+}
+
+.integrantes .social{
+    font-size: 60; 
+    color: #0A0840;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+li{
+    display: inline;
+    margin: 0 0 0 15px;   
+}

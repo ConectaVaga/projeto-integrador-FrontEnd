@@ -97,7 +97,7 @@ function Navbar() {
 
             </Link>
             
-            <Link to="/sobrenos">
+            <Link to="/contato">
               <Box mx={5} className="cursor">
                 <Typography variant="h6" color="inherit">
                   Contato
