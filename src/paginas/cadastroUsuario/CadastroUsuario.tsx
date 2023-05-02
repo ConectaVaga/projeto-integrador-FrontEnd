@@ -95,7 +95,7 @@ function CadastroUsuario() {
   }
 
   return (
-    <Grid container direction="row" justifyContent="center" alignItems="center" style={{background: 'lightgray'}} >
+    <Grid container direction="row" justifyContent="center" alignItems="center"  >
       <Grid item xs={4} className="imagem2" ></Grid>
       <Grid item xs={4} alignItems="center" >
         <form onSubmit={onSubmit}>
