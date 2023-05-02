@@ -3,7 +3,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Sobrenos.css'
 import { Opacity } from '@material-ui/icons'
-import Carousel from '../../components/carousel/Carousel'
+
 
 function Sobrenos() {
   return (
