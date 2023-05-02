@@ -5,6 +5,7 @@
 .boxPrincipal {
     background-color: #114880 !important; 
     height: 100%
+}
 
 .descricao2{ 
 font: size 50px;
@@ -20,3 +21,4 @@ width: 450px;
 height: 65px;
 color: white;
 }
+
