@@ -10,6 +10,7 @@ import { TokenState } from "../../store/tokens/TokensReducer";
 import { toast } from "react-toastify";
 import { useSelector } from "react-redux";
 import ModalPostagem from "../../components/postagens/modalPostagem/ModalPostagem";
+import Carousel from "../../components/estaticos/carousel/Carousel";
 
 function Home() {
 
@@ -61,7 +62,8 @@ function Home() {
                     <img src="https://ik.imagekit.io/6kg1q0s1r/Writer_s_block-amico.png?updatedAt=1681323288251" alt="Imagem Capa" className="fotoHome" />
                 </Grid> */}
                 <Grid xs={12} className='postagens'>
-                    <ListaPostagem />
+                    {/* <ListaPostagem /> */}
+                    <Carousel />
                 </Grid>
             </Grid >
         </>
