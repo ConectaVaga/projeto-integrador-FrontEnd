@@ -113,7 +113,7 @@ function CadastroUsuario() {
             variant="h6"
             gutterBottom
             color="textPrimary"
-            component="h6"
+            component="h3"
             align="center"
             className="p"
           >
@@ -205,7 +205,7 @@ function CadastroUsuario() {
             </Button>
             <Button
               type="submit"
-              size="large"
+              size="medium"
               variant="contained"
               className="botaoCadastrar"
               fullWidth
@@ -214,7 +214,7 @@ function CadastroUsuario() {
             </Button>
           </Box>
         </form>
-        <Grid xs={4} className="imagemLogo"></Grid>
+        <Grid xs={6} className="imagemLogo"></Grid>
       </Grid>
     </Grid>
   );

@@ -5,7 +5,6 @@
     left: 20px;
     top: 70px;
     background: url("https://ik.imagekit.io/vfpark/Authentication-rafiki.svg?updatedAt=1682705675180");
-    background-repeat: no-repeat;
     }
 
 /*.junte{
@@ -41,10 +40,10 @@
 
 .text-cadastrar{
     position: absolute;
-    width: 410px;
+    width: 434px;
     height: 150px;
-    left: 615px;
-    top:460px;  
+    left: 559px;
+    top:440px;  
     font-weight: regular !important;
     color: #000000;
 }
@@ -54,8 +53,8 @@ width: 410px;
 font-weight: bold !important;
 color: #000000;
 height: 150px;
-left: 735px;
-top: 460px;
+left: 693px;
+top: 440px;
 }
 
 .botao{
@@ -84,4 +83,5 @@ border-radius: 16px;
     top: 202px;
     }
 
-    
+   
+ 
