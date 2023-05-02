@@ -1,4 +1,5 @@
-import Tema from "./Tema";
+import Tema from "./Tema"
+import Usuario from "./Usuario";
 
 interface Postagem {
   id: number;
@@ -6,7 +7,8 @@ interface Postagem {
   texto: string;
   data: string;
   imagem: string;
-  tema?: Tema | null
+  tema?: Tema | null;
+  usuario?: Usuario | null
 }
 
 export default Postagem;

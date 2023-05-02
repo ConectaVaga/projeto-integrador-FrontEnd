@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 
 import Typography from "@mui/material/Typography";
-import { addToken } from "../../../store/tokens/Action";
+import { addToken } from "../../../store/tokens/action";
 import { toast } from "react-toastify";
 import { TokenState } from "../../../store/tokens/TokensReducer";
 import { useDispatch, useSelector } from "react-redux";

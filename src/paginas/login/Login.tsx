@@ -9,7 +9,7 @@ import Usuario from "../../models/Usuario";
 import { toast } from "react-toastify";
 import { useDispatch, useSelector } from "react-redux";
 import { TokenState } from "../../store/tokens/TokensReducer";
-import { addToken } from "../../store/tokens/Action";
+import { addId, addToken } from "../../store/tokens/action";
 
 function Login() {
   const history = useNavigate();
@@ -19,6 +19,15 @@ function Login() {
   const [token, setToken] = useState("");
 
   const [userLogin, setUserLogin] = useState<UsuarioLogin>({
+    id: 0,
+    nome: "",
+    usuario: "",
+    senha: "",
+    foto: "",
+    token: "",
+  });
+
+  const [respUserLogin, setRespUserLogin] = useState<UsuarioLogin>({
     id: 0,
     nome: "",
     usuario: "",
@@ -37,7 +46,7 @@ function Login() {
   async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
     e.preventDefault();
     try {
-      await login(`/usuarios/logar`, userLogin, setToken);
+      await login(`/usuarios/logar`, userLogin, setRespUserLogin);
 
       toast.success("Usuário logado com sucesso!", {
         position: "top-right",
@@ -69,6 +78,14 @@ function Login() {
       history("/home");
     }
   }, [token]);
+
+  useEffect(() => {
+    if (respUserLogin.token !== '') {
+      dispatch(addToken(respUserLogin.token))
+      dispatch(addId(respUserLogin.id.toString()))
+      history("/home")
+    }
+  }, [respUserLogin.token]);
 
   return (
     <>

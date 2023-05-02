@@ -8,19 +8,23 @@ import { busca, buscaId, put, post } from '../../../service/Service';
 import './CadastroPostagem.css'
 import { TokenState } from '../../../store/tokens/TokensReducer';
 import { toast } from 'react-toastify';
+import Usuario from '../../../models/Usuario';
 
 function CadastroPostagem() {
 
     const history = useNavigate();
 
     const token = useSelector<TokenState, TokenState["token"]>(
-         (state) => state.token
+        (state) => state.token
+    )
+
+    const userId = useSelector<TokenState, TokenState['id']>(
+        (state) => state.id
     )
 
     const { id } = useParams<{ id: string }>();
 
     const [temas, setTemas] = useState<Tema[]>([]);
- 
 
     useEffect(() => {
         if (token === '') {
@@ -44,9 +48,17 @@ function CadastroPostagem() {
         texto: '',
         data: '',
         imagem: '',
-        tema: null
+        tema: null,
+        usuario: null
     });
 
+    const [usuario, setUsuario] = useState<Usuario>({
+        id: +userId,
+        nome: '',
+        usuario: '',
+        senha: '',
+        foto: ''
+    })
 
     const [tema, setTema] = useState<Tema>({
         id: 0,
@@ -58,16 +70,17 @@ function CadastroPostagem() {
         setPostagem({
             ...postagem,
             tema: tema,
+            usuario: usuario
         });
     }, [tema]);
-    
-  /*  useEffect(() => {
-        getTemas();
-        if (id !== undefined) {
-          findByIdPostagem(id);
-        }
-      }, [id]);*/
-      
+
+    /*  useEffect(() => {
+          getTemas();
+          if (id !== undefined) {
+            findByIdPostagem(id);
+          }
+        }, [id]);*/
+
     function updatePost(event: ChangeEvent<HTMLInputElement>) {
         setPostagem({
             ...postagem,
@@ -99,49 +112,47 @@ function CadastroPostagem() {
         }
     }, [id]);
 
-    
-
     async function onSubmit(event: ChangeEvent<HTMLFormElement>) {
         event.preventDefault();
-    
+
         if (id !== undefined) {
-          put("/postagens", postagem, setPostagem, {
-            headers: {
-              Authorization: token,
-            },
-          });   toast.success('Postagem atualizada com sucesso', {
-            position: 'top-right',
-            autoClose: 2000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: false,
-            draggable: false,
-            theme: 'colored',
-            progress: undefined
-        })
+            put("/postagens", postagem, setPostagem, {
+                headers: {
+                    Authorization: token,
+                },
+            }); toast.success('Postagem atualizada com sucesso', {
+                position: 'top-right',
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: 'colored',
+                progress: undefined
+            })
         } else {
-          post("/postagens", postagem, setPostagem, {
-            headers: {
-              Authorization: token,
-            },
-          });
-          toast.success('Postagem cadastrada com sucesso', {
-            position: "top-right",
-            autoClose: 3000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            theme: 'colored',
-            progress: undefined
+            post("/postagens", postagem, setPostagem, {
+                headers: {
+                    Authorization: token,
+                },
+            });
+            toast.success('Postagem cadastrada com sucesso', {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                theme: 'colored',
+                progress: undefined
             });
         }
         back();
-      }
-    
-      function back() {
+    }
+
+    function back() {
         history("/postagens");
-      }
+    }
 
     return (
         <>
