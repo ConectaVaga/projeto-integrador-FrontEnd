@@ -1,8 +1,7 @@
 .fotoHome {
-    width: 500px;
+    width: 100%;
     height: 500px;
     display: block;
-    transform: rotateY(180deg);  
 }
 
 .caixa {
@@ -10,13 +9,19 @@
 }
 
 .titulo {
-    color: #1d3557 !important;
-    font-weight: bold
+    margin-top: 20px !important;
+    color: #CD0045;
+    font-weight: bold !important
+}
+
+.subtitulo {
+    color: #0D0D0D;
+    margin-bottom: 15px !important;
 }
 
 .botao {
     border-color: #1d3557 !important; 
-    background-color: #a8dadc !important;
+    background-color: #CD0045 !important;
     color: #1d3557
 }
 
