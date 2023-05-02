@@ -95,29 +95,31 @@ function CadastroUsuario() {
   }
 
   return (
-    <Grid container direction="row" justifyContent="center" alignItems="center">
-      <Grid item xs={4} className="imagem2"></Grid>
-      <Grid item xs={4} alignItems="center">
+    <Grid container direction="row" justifyContent="center" alignItems="center"  >
+      <Grid item xs={4} className="imagem2" ></Grid>
+      <Grid item xs={4} alignItems="center" >
         <form onSubmit={onSubmit}>
           <Typography
             variant="h3"
             gutterBottom
             color="textPrimary"
             component="h3"
-            align="center"
+            align="left"
             className="textocadastro"
           >
-            Crie sua conta
+          Crie sua conta
           </Typography>
           <Typography
             variant="h6"
             gutterBottom
             color="textPrimary"
+
             component="h6"
-            align="center"
+            align="left"
+
             className="p"
           >
-            Preencha o formulário
+          Preencha o formulário
           </Typography>
           <TextField
             id="nome"
@@ -205,7 +207,7 @@ function CadastroUsuario() {
             </Button>
             <Button
               type="submit"
-              size="large"
+              size="medium"
               variant="contained"
               className="botaoCadastrar"
               fullWidth
@@ -214,7 +216,7 @@ function CadastroUsuario() {
             </Button>
           </Box>
         </form>
-        <Grid xs={4} className="imagemLogo"></Grid>
+        <Grid xs={6} className="imagemLogo"></Grid>
       </Grid>
     </Grid>
   );
