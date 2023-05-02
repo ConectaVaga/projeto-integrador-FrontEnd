@@ -18,6 +18,7 @@ import store from "./store/Store";
 import { ToastContainer } from "react-toastify";
 import Navbar from "./components/estaticos/navbar/Navbar";
 import 'react-toastify/dist/ReactToastify.css'
+import Contato from './paginas/contato/Contato';
 
 
 function App() {
@@ -38,7 +39,7 @@ function App() {
 
           <Route path="/formularioTema/:id" element={<CadastroTema />} />
           <Route path="/deletarTema/:id" element={<DeletarTema />} />
-
+          <Route path='/contato' element={<Contato />} />
           <Route path="/postagens" element={<ListaPostagem />} />
           <Route path="/formularioPostagem" element={<CadastroPostagem />} />
 
