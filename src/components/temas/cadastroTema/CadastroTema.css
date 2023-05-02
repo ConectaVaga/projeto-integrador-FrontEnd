@@ -1,20 +1,44 @@
-/*.imagem-tema{
-    background-image: url(https://ik.imagekit.io/wvdiy3mbn/blog-pessoal/d19416d488077ddea4db2bef2ce02c59.jpg?updatedAt=1682346588355) ;
+.imagem-tema{
+    background-image: url(https://ik.imagekit.io/ohu04lxwc/imagemcadastroTema.png?updatedAt=1683036397300);
     background-repeat: no-repeat;
      width: 100vh;
      min-height: 100vh;
      background-size: cover;
      background-position: center;
-}  */
+} 
 
 .fundo-tema {
-    background-color:#EBF2F2;
+    background-color:#E5E5E5;
 }
 
 .button-tema {
     background-color: #CD0045 !important;
+    top:-20vh;
+   left: -20vh;
 }
 
-.input-tema {
-    width: 30vw;
+.subtitulo{
+font-size: 16px !important;
+font-weight: regular !important;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 26px;
+    
+  }
+  
+  .input-tema {
+    width: 60vh;
+    height: 20vh;
+    top: 1.5vh;
+  }
+  
+  .input-categoria {
+    width: 60vh;
+    height: 20vh;
+    top:-8vh;
+  }
+ 

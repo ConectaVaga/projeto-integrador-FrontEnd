@@ -128,7 +128,7 @@ function Login() {
                 required
                 fullWidth
               />
-              <Box marginTop={2} textAlign={"center"}>
+              <Box marginTop={0} textAlign={"center"}>
                 <Button
                   type="submit"
                   variant="contained"
@@ -164,7 +164,7 @@ function Login() {
             </Box>
           </Box>
         </Grid>
-        <Grid xs={6} className="imagemLogin"></Grid>
+        <Grid xs={5} className="imagemLogin"></Grid>
       </Grid>
     </>
   );
