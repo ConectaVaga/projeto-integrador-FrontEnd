@@ -30,7 +30,7 @@ function Contato() {
             </Box>
 
 
-            <Grid className='container' container xs={12} direction='row' alignItems='center' justifyContent='center'>
+            <Grid className='containerCtt' container xs={12} direction='row' alignItems='center' justifyContent='center'>
 
                 <Box mx={12} className='integrantes'>
                     <Box className='foto'>

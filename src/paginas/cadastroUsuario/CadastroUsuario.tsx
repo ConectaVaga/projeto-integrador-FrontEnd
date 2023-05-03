@@ -96,7 +96,7 @@ function CadastroUsuario() {
 
   return (
     <Grid container direction="row" justifyContent="center" alignItems="center"  >
-      <Grid item xs={4} className="imagem2" ></Grid>
+       <Grid xs={6} className="imagemLogo"></Grid>
       <Grid item xs={4} alignItems="center" >
         <form onSubmit={onSubmit}>
           <Typography
@@ -113,14 +113,13 @@ function CadastroUsuario() {
             variant="h6"
             gutterBottom
             color="textPrimary"
-
-            component="h6"
+            component="h3"
             align="left"
-
-            className="p"
+            
           >
           Preencha o formulário
           </Typography>
+          
           <TextField
             id="nome"
             value={usuario.nome}
@@ -216,7 +215,7 @@ function CadastroUsuario() {
             </Button>
           </Box>
         </form>
-        <Grid xs={6} className="imagemLogo"></Grid>
+       
       </Grid>
     </Grid>
   );
