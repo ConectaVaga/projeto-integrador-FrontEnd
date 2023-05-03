@@ -1,87 +1,18 @@
-.imagemLogin{
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    left: 20px;
-    top: 70px;
-    background: url("https://ik.imagekit.io/vfpark/Authentication-rafiki.svg?updatedAt=1682705675180");
-    }
+.imagemLogin {
+    background-repeat: no-repeat;
+    /*width: vh;*/
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://ik.imagekit.io/vfpark/Authentication-rafiki.svg?updatedAt=1682705675180%22")
+}
 
-/*.junte{
-    cursor: 'pointer' !important
+.textField {
+width: 60vh;
+}
+
+.textoCadastre{
+    font-weight: bold !important;
+    color: #000;
     
 }
-.junte :hover{
-    color: 'yellow' !important
-}*/
-
-.text-bemvindo{
-    align-items: center;
-    font-weight: bold !important;
-    color: #000000;
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    left:525px;
-    top: 100px;
-}
-
-.text-descricao{
-    position: absolute;
-    width: 1005px;
-    height: 36px;
-    left:333px;
-    top: 160px;
-    font-style: regular;
-    line-height: 54px;
-    color: #000000;
-
-}
-
-.text-cadastrar{
-    position: absolute;
-    width: 434px;
-    height: 150px;
-    left: 559px;
-    top:440px;  
-    font-weight: regular !important;
-    color: #000000;
-}
-.text-cadastrar1{
-position: absolute;
-width: 410px;
-font-weight: bold !important;
-color: #000000;
-height: 150px;
-left: 693px;
-top: 440px;
-}
-
-.botao{
-    background: #CD0045 !important;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: absolute;
-    width: 250px;
-    height: 64px;
-    left: 210px;
-    top: 219px;
-    border-radius: 16px;
-}
-
-.senha{
-width: 50px;
-height: 50px;
-left: 200px;
-top: 200px;
-border-radius: 16px;
-}
-
-.usuario{
-    width: 50px;
-    height: 50px;
-    left: 200px;
-    top: 202px;
-    }
-
-   
- 
