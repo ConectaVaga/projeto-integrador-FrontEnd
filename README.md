@@ -8,8 +8,8 @@
 
 ## Sobre 
 
-<p align=center>O projeto da ONG ConectaVaga tem como objetivo promover o trabalho decente e a inclusão social de grupos minoritários e em situação de vulnerabilidade, por meio da intermediação de empregadores com profissionais. 
-A ONG busca oferecer oportunidades de trabalho e capacitações, bem como acompanhar a jornada dos trabalhadores em busca do seu desenvolvimento profissional e pessoal. Além disso, a ConectaVaga conta com uma rede de parceiros para ajudar nessa jornada de transformação. Em suma, o projeto visa transformar a vida das pessoas e torná-las economicamente ativas e donas de seu próprio destino e carreira.</p>
+<p align=center>O projeto ConectaVaga tem como objetivo promover o trabalho decente e a inclusão social de grupos minoritários e em situação de vulnerabilidade, por meio da intermediação de empregadores com profissionais. 
+Buscando oferecer oportunidades de trabalho e capacitações, e acompanhar a jornada dos trabalhadores em busca do seu desenvolvimento profissional e pessoal. Além disso, a ConectaVaga conta com uma rede de parceiros para ajudar nessa jornada de transformação. Em suma, o projeto visa transformar a vida das pessoas e torná-las economicamente ativas e donas de seu próprio destino e carreira.</p>
 
 <p align=center> <strong>Missão:</strong> No ambiente digital, ser o meio que conecta pessoas de todos os contextos de vulnerabilidades à oportunidades de trabalho.</p>
 <p align=center> <strong>Valores:</strong> Baseado na ética e responsabilidade social, valorizamos as diferenças e acreditamos em oportunidades iguais.</p>
@@ -29,12 +29,21 @@ A ONG busca oferecer oportunidades de trabalho e capacitações, bem como acompa
 
 <div align=center>
   <img width=800px height=400px  src="https://ik.imagekit.io/vfpark/C%C3%B3pia_de_Banners__1_.png?updatedAt=1683123844659" alt="ODS 8"  />
+<p></p>
+
+<p><strong>O que são ODS?</strong></p>
+
+<p align="center">Os Objetivos de Desenvolvimento Sustentável (ODS) são uma agenda mundial adotada durante a Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em setembro de 2015, composta por 17 objetivos e 169 metas a serem atingidos até 2030.
+<a href='https://www.estrategiaods.org.br/sobre-a-estrategia/'>Fonte: Estratégia ODS</a></p>
+
+<p><strong>ODS 8</strong></p>
+<p align="center">Desenvolvemos o Projeto ConectaVaga, com base nos Objetivos de Desenvolvimento Sustentável 8 de Trabalho decente e crescimento econômico. 
 </div>
 
 ## Documentação
 <div align=center>
 
-Clique [aqui](https://github.com/ConectaVaga/projeto-integrador-FrontEnd/blob/main/ConectaDocs/documenta%C3%A7%C3%A3o.md) para acessar a documentação da API da ConectaVaga.
+Clique [aqui](https://github.com/ConectaVaga/projeto-integrador-FrontEnd/blob/main/ConectaDocs/documenta%C3%A7%C3%A3o.md) para acessar a documentação da API da ConectaVaga.</p>
 
 </div>
 
