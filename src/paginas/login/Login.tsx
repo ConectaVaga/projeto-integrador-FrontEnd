@@ -80,10 +80,10 @@ function Login() {
   }, [token]);
 
   useEffect(() => {
-    if (respUserLogin.token !== '') {
-      dispatch(addToken(respUserLogin.token))
-      dispatch(addId(respUserLogin.id.toString()))
-      history("/home")
+    if (respUserLogin.token !== "") {
+      dispatch(addToken(respUserLogin.token));
+      dispatch(addId(respUserLogin.id.toString()));
+      history("/home");
     }
   }, [respUserLogin.token]);
 
@@ -95,7 +95,8 @@ function Login() {
         justifyContent="center"
         alignItems="center"
       >
-        <Grid item xs={4} alignItems="center">
+        <Grid xs={5} className="imagemLogin"></Grid>
+        <Grid item xs={6} alignItems="center">
           <Box paddingX={4}>
             <form onSubmit={onSubmit}>
               <Box paddingX={12}>
@@ -105,9 +106,8 @@ function Login() {
                   color="textPrimary"
                   component="h3"
                   align="center"
-                  className="text-bemvindo"
                 >
-                          Seja bem-vinde!
+                  Seja bem-vinde!
                 </Typography>
               </Box>
               <Typography
@@ -115,13 +115,12 @@ function Login() {
                 gutterBottom
                 color={"textPrimary"}
                 align="center"
-                className="text-descricao"
+                
               >
                 Acesse sua conta agora mesmo.
               </Typography>
               <TextField
                 id="usuario"
-                className="usuario"
                 value={userLogin.usuario}
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                 label="Usuário"
@@ -130,11 +129,11 @@ function Login() {
                 margin="normal"
                 type="text"
                 required
-                fullWidth
+                className="textField"              
+
               />
               <TextField
                 id="senha"
-                className="senha"
                 value={userLogin.senha}
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                 label="Senha"
@@ -143,26 +142,28 @@ function Login() {
                 margin="normal"
                 type="password"
                 required
-                fullWidth
+                className="textField"   
+                style={{marginBottom:"4vh"}}            
+
+
               />
               <Box marginTop={0} textAlign={"center"}>
                 <Button
                   type="submit"
                   variant="contained"
                   color="primary"
-                  className="botao"
+                   
                 >
                   Logar
                 </Button>
               </Box>
             </form>
-            <Box display={"flex"} justifyContent={"center"} marginTop={2}>
-              <Box marginRight={1}>
+            <Box display={"flex"} justifyContent={"center"}>
+              <Box>
                 <Typography
                   variant="subtitle2"
                   gutterBottom
                   align="center"
-                  className="text-cadastrar"
                 >
                   Novo no ConectaVaga?
                 </Typography>
@@ -172,16 +173,15 @@ function Login() {
                   variant="subtitle2"
                   gutterBottom
                   align="center"
-                  className="text-cadastrar1"
+                  className='textoCadastre'
+              
                 >
-                  {" "}
                   Cadastra-se!
                 </Typography>
               </Link>
             </Box>
           </Box>
         </Grid>
-        <Grid xs={5} className="imagemLogin"></Grid>
       </Grid>
     </>
   );
