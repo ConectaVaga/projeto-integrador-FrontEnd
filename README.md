@@ -8,10 +8,14 @@
 
 ## Sobre 
 
-<p align=center>O projeto ConectaVaga tem como objetivo promover o trabalho decente e a inclusão social de grupos minoritários e em situação de vulnerabilidade, por meio da intermediação de empregadores com profissionais. 
-Buscando oferecer oportunidades de trabalho e capacitações, e acompanhar a jornada dos trabalhadores em busca do seu desenvolvimento profissional e pessoal. Além disso, a ConectaVaga conta com uma rede de parceiros para ajudar nessa jornada de transformação. Em suma, o projeto visa transformar a vida das pessoas e torná-las economicamente ativas e donas de seu próprio destino e carreira.</p>
+<p align=center>O projeto ConectaVaga é uma rede social desenvolvida com o intuito de promover visibilidade, inclusão e senso de pertencimento à grupos minoritários que estejam em situação de vulnerabilidade social e econômica. Conectando-os às oportunidades de trabalho decente, capacitação e integração. Visando o bem estar e mão de obra justa dentro do mercado de trabalho atual. Oferecemos ferramentas necessárias para impulsionar profissionalmente essas pessoas, para que possam ter acesso a melhores oportunidades através de uma rede de parceiros que irão ajudar nessa caminhada de transformação. Estamos em constante expansão e convidamos você a unir-se ao propósito do ConectaVaga e transformar histórias!</p>
 
-<p align=center> <strong>Missão:</strong> No ambiente digital, ser o meio que conecta pessoas de todos os contextos de vulnerabilidades à oportunidades de trabalho.</p>
+<p align=center><strong>Rede Social</strong></p>
+<p align=center>O site é uma rede social, onde a ConectaVaga realizará a divulgação de vagas, cursos, notícias sobre empregabilidade, materiais de estudo e eventos de empresas parceiras. O acesso à essas informações serão disponibilizadas de forma gratuita! Não haverá plano premium, e com isso, mais pessoas poderão ser influenciadas.</p>
+
+<br></br>
+
+<p align=center> <strong>Missão:</strong> No ambiente digital, ser o meio que conecta pessoas em situação de vulnerabilidade à oportunidades de trabalho.</p>
 <p align=center> <strong>Valores:</strong> Baseado na ética e responsabilidade social, valorizamos as diferenças e acreditamos em oportunidades iguais.</p>
 
 
@@ -37,7 +41,8 @@ Buscando oferecer oportunidades de trabalho e capacitações, e acompanhar a jor
 <a href='https://www.estrategiaods.org.br/sobre-a-estrategia/'>Fonte: Estratégia ODS</a></p>
 
 <p><strong>ODS 8</strong></p>
-<p align="center">Desenvolvemos o Projeto ConectaVaga, com base nos Objetivos de Desenvolvimento Sustentável 8 de Trabalho decente e crescimento econômico. 
+<p align="center">O Projeto ConectaVaga foi desenvolvido com base nos Objetivos de Desenvolvimento Sustentável 8, referente ao Trabalho decente e crescimento econômico. Um tópico extremamente importante em nossa sociedade, pois infelizmente os dados relacionados ao desemprego e trabalho forçado ainda são altos. Segundo a Organização Internacional do Trabalho: Em 2021 (Mundialmente), 27,6 milhões de pessoas eram submetidas ao trabalho forçado. 17,3 milhões eram exploradas no setor privado; 6,3 milhões eram vítimas da exploração sexual comercial forçada e 3,9 milhões do trabalho forçado era imposto pelo Estado. <a href='https://www.ilo.org/brasilia/temas/trabalho-escravo/lang--pt/index.htm'>Leia sobre.<a/></p>
+<p>Para ajudar a reverter os dados insatisfatórios, a ConectaVaga foi criada com o objetivo de auxiliar o crescimento econômico e ampliar o desenvolvimento de emprego pleno à população.</p>
 </div>
 
 ## Documentação
