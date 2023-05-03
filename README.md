@@ -40,6 +40,7 @@ Clique [aqui](https://github.com/ConectaVaga/projeto-integrador-FrontEnd/blob/ma
 ## Tecnologias  
 <!-- ALGUM BANNER SOBRE TECNOLOGIAS -->
 
+
 <h1 align=center> Back-end </h1>
 
 <div style=inline align=center >
@@ -51,6 +52,10 @@ Clique [aqui](https://github.com/ConectaVaga/projeto-integrador-FrontEnd/blob/ma
   </a>
   <a href='https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/'>
     <img width=70px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" alt="Spring" />
+  </a>
+   </a>
+  <a href='https://docs.docker.com/desktop/hardened-desktop/'>
+    <img width=70px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
   </a>
 </div>
 <br>
@@ -74,8 +79,23 @@ Clique [aqui](https://github.com/ConectaVaga/projeto-integrador-FrontEnd/blob/ma
   <a href='https://www.typescriptlang.org/docs/'>
    <img width=70px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="Typescript" />
   </a>
+  </a>
+  <a href='https://code.visualstudio.com/docs'>
+   <img width=70px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS" />
+  </a>
+  
 </div>
   <br>
+  
+  <h1  align=center>Outras Ferramentas</h1>
+  <div style=inline align=center >
+    <img width=70px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva" />
+    <img width=70px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" />
+    <img width=70px src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain-wordmark.svg" alt="Trello" />
+          
+          
+</div>
+
 
 
 
