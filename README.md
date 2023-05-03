@@ -28,7 +28,7 @@ A ONG busca oferecer oportunidades de trabalho e capacitações, bem como acompa
 ## Objetivos de Desenvolvimento Sustentável
 
 <div align=center>
-  <img width=1000px height=300px src="https://ik.imagekit.io/ohu04lxwc/banner.png?updatedAt=1682440755323" alt="ODS 8"  />
+  <img width=800px height=400px  src="https://ik.imagekit.io/vfpark/C%C3%B3pia_de_Banners__1_.png?updatedAt=1683123844659" alt="ODS 8"  />
 </div>
 
 ## Documentação
