@@ -37,11 +37,11 @@
 
 <p><strong>O que são ODS?</strong></p>
 
-<p align="center">Os Objetivos de Desenvolvimento Sustentável (ODS) são uma agenda mundial adotada durante a Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em setembro de 2015, composta por 17 objetivos e 169 metas a serem atingidos até 2030.
-<a href='https://www.estrategiaods.org.br/sobre-a-estrategia/'>Fonte: Estratégia ODS</a></p>
+<p align="center">Os Objetivos de Desenvolvimento Sustentável (ODS) são uma agenda mundial adotada durante a Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável em setembro de 2015, composta por 17 objetivos e 169 metas a serem atingidos até 2030. Fonte: 
+<a href='https://www.estrategiaods.org.br/sobre-a-estrategia/'>Estratégia ODS</a></p>
 
 <p><strong>ODS 8</strong></p>
-<p align="center">O Projeto ConectaVaga foi desenvolvido com base nos Objetivos de Desenvolvimento Sustentável 8, referente ao Trabalho decente e crescimento econômico. Um tópico extremamente importante em nossa sociedade, pois infelizmente os dados relacionados ao desemprego e trabalho forçado ainda são altos. Segundo a Organização Internacional do Trabalho: Em 2021 (Mundialmente), 27,6 milhões de pessoas eram submetidas ao trabalho forçado. 17,3 milhões eram exploradas no setor privado; 6,3 milhões eram vítimas da exploração sexual comercial forçada e 3,9 milhões do trabalho forçado era imposto pelo Estado. <a href='https://www.ilo.org/brasilia/temas/trabalho-escravo/lang--pt/index.htm'>Leia sobre.<a/></p>
+<p align="center">O Projeto ConectaVaga foi desenvolvido com base nos Objetivos de Desenvolvimento Sustentável 8, referente ao Trabalho decente e crescimento econômico. Um tópico extremamente importante em nossa sociedade, pois infelizmente os dados relacionados ao desemprego e trabalho forçado ainda são altos. Segundo a Organização Internacional do Trabalho: Em 2021 (Mundialmente), 27,6 milhões de pessoas eram submetidas ao trabalho forçado. 17,3 milhões eram exploradas no setor privado; 6,3 milhões eram vítimas da exploração sexual comercial forçada e 3,9 milhões do trabalho forçado era imposto pelo Estado. <a href='https://www.ilo.org/brasilia/temas/trabalho-escravo/lang--pt/index.htm'>Leia sobre<a/>.</p>
 <p>Para ajudar a reverter os dados insatisfatórios, a ConectaVaga foi criada com o objetivo de auxiliar o crescimento econômico e ampliar o desenvolvimento de emprego pleno à população.</p>
 </div>
 
@@ -118,7 +118,7 @@ Clique [aqui](https://github.com/ConectaVaga/projeto-integrador-FrontEnd/blob/ma
 
 <!--<h1 align=center> Desenvolvedores </h1> -->
 ## Desenvolvedores
-
+<p align=center>Entre em contato com os criadores do projeto. Teremos o prazer em respondê-los!</p>
 <div align=center>
     <table>
       <thead>
