@@ -49,24 +49,26 @@ function ListaPostagem() {
         <div className='listaPost'>
             {postagens.map((post) => (
                 <Box m={4} >
-                    <Card variant='outlined' style={{ padding: '8px' }}>
+                    <Card variant='outlined' style={{ padding: '8px'  }}>
                         <CardContent>
-                            <Typography color="textSecondary" gutterBottom>
+                            <Typography variant="h5" color="green" gutterBottom>
                                 {post.titulo}
                             </Typography>
                             <Typography variant="h5" component="h2">
                                 {post.texto}
                             </Typography>
-                            <Typography variant="body1" component="p">
-                                Tema: {post.tema?.categoria}
-                            </Typography>
+                            
 
                             <Typography variant="body1" component="p">
                                 Postado por: {post.usuario?.nome}
                             </Typography>
-
-                            <img src={post.usuario?.foto} alt={post.usuario?.nome} />
-
+                            <Typography className='imagempost'>
+                            {/* <img src={post.usuario?.foto} alt={post.usuario?.nome} /> */}
+                            <img src={post.imagem} alt={post.usuario?.nome} width={450} />
+                            </Typography>
+                            <Typography variant="body1"  component="p">
+                                Tema: {post.tema?.categoria}
+                            </Typography>
                             <Typography variant="body1" component="p">
                                 {/* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat */}
                                 Data: {Intl.DateTimeFormat('pt-BR', { dateStyle: 'full', timeStyle: 'medium' }).format(new Date(post.data))}
