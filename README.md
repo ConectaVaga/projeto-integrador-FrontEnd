@@ -9,8 +9,11 @@
 ## Sobre 
 
 <p align=center>O projeto da ONG ConectaVaga tem como objetivo promover o trabalho decente e a inclusão social de grupos minoritários e em situação de vulnerabilidade, por meio da intermediação de empregadores com profissionais. 
-A ONG busca oferecer oportunidades de trabalho e capacitações, bem como acompanhar a jornada dos trabalhadores em busca do seu desenvolvimento profissional e pessoal. Além disso, a ConectaVaga conta com uma rede de parceiros para ajudar nessa jornada de transformação. Em suma, o projeto visa transformar a vida das pessoas e torná-las economicamente ativas e donas de seu próprio destino e carreira.
-</p>
+A ONG busca oferecer oportunidades de trabalho e capacitações, bem como acompanhar a jornada dos trabalhadores em busca do seu desenvolvimento profissional e pessoal. Além disso, a ConectaVaga conta com uma rede de parceiros para ajudar nessa jornada de transformação. Em suma, o projeto visa transformar a vida das pessoas e torná-las economicamente ativas e donas de seu próprio destino e carreira.</p>
+
+<p align=center> <strong>Missão:</strong> No ambiente digital, ser o meio que conecta pessoas de todos os contextos de vulnerabilidades à oportunidades de trabalho.</p>
+<p align=center> <strong>Valores:</strong> Baseado na ética e responsabilidade social, valorizamos as diferenças e acreditamos em oportunidades iguais.</p>
+
 
 ## Índice
 
