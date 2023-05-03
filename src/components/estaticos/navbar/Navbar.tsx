@@ -10,6 +10,7 @@ import { toast } from "react-toastify";
 import { TokenState } from "../../../store/tokens/TokensReducer";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
+import LogoutIcon from '@mui/icons-material/Logout';
 
 function Navbar() {
   const token = useSelector<TokenState, TokenState["token"]>(
@@ -111,7 +112,7 @@ function Navbar() {
           <Box>
             <Box mx={1} className="logout" onClick={goLogout} display={"flex"} justifyContent={"space-between"} width={"100%"}>
               <Typography variant="h5" color="inherit">
-                <img src="https://ik.imagekit.io/vfpark/logouts2.png?updatedAt=1682899164488" alt=""/>
+              <LogoutIcon />
               </Typography>
 
             </Box>
