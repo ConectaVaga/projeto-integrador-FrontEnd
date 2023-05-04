@@ -52,11 +52,12 @@ function ListaTema() {
               <Typography color="textSecondary" gutterBottom>
                 Tema
               </Typography>
+              
+              <Typography variant="h4" component="h2">
+                {tema.nome}
+              </Typography>
               <Typography variant="h6" component="h2">
                 {tema.categoria}
-              </Typography>
-              <Typography variant="h5" component="h2">
-                {tema.nome}
               </Typography>
             </CardContent>
             <CardActions>
