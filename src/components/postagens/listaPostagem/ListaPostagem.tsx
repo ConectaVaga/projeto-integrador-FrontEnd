@@ -48,8 +48,8 @@ function ListaPostagem() {
     return (
         <div className='listaPost'>
             {postagens.map((post) => (
-                <Box m={4} >
-                    <Card variant='outlined' style={{ padding: '8px'  }}>
+                <Box m={4}  alignItems="center" justifyContent="center">
+                    <Card variant='outlined'  style={{ padding: '8px', backgroundColor: ' #c6ffff41', width:'500px'}}>
                         <CardContent>
                             <Typography variant="h5" color="green" gutterBottom>
                                 {post.titulo}
@@ -58,7 +58,6 @@ function ListaPostagem() {
                                 {post.texto}
                             </Typography>
                             
-
                             <Typography variant="body1" component="p">
                                 Postado por: {post.usuario?.nome}
                             </Typography>

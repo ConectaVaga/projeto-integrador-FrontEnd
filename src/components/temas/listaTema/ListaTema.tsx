@@ -46,13 +46,13 @@ function ListaTema() {
   return (
     <>
       {temas.map((tema) => (
-        <Box m={2}>
-          <Card variant="outlined">
+        <Box m={2} >
+          <Card variant="outlined" style={{ padding: '8px', backgroundColor: ' #c6ffff41', width:'500px'}}>
             <CardContent>
               <Typography color="textSecondary" gutterBottom>
                 Tema
               </Typography>
-              <Typography variant="h5" component="h2">
+              <Typography variant="h6" component="h2">
                 {tema.categoria}
               </Typography>
               <Typography variant="h5" component="h2">

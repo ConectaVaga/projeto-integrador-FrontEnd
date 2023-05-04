@@ -1,5 +1,5 @@
 .imagem-tema{
-    background-image: url(https://ik.imagekit.io/ohu04lxwc/imagemcadastroTema.png?updatedAt=1683036397300);
+    background-image: url("https://ik.imagekit.io/ohu04lxwc/imagemcadastroTema.png?updatedAt=1683036397300");
     background-repeat: no-repeat;
      width: 100vh;
      min-height: 100vh;
@@ -8,7 +8,7 @@
 } 
 
 .fundo-tema {
-    background-color:#E5E5E5;
+    background-color: white;
 }
 
 .button-tema {

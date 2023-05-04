@@ -9,7 +9,7 @@ import CadastroPostagem from '../cadastroPostagem/CadastroPostagem';
 function getModalStyle() {
   const top = 50 ;
   const left = 50;
-
+//max rolls
   return {
     top: `${top}%`,
     left: `${left}%`,
