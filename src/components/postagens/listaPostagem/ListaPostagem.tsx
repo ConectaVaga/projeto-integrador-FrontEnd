@@ -6,6 +6,7 @@ import { useNavigate, Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { TokenState } from '../../../store/tokens/TokensReducer'
 import { toast } from 'react-toastify'
+import { Grid } from '@material-ui/core';
 
 function ListaPostagem() {
 
@@ -47,7 +48,9 @@ function ListaPostagem() {
 
     return (
         <div className='listaPost'>
-            
+
+          <div >
+
             {postagens.map((post) => (
                 <Box m={4}  alignItems="center" justifyContent="center">
                     <Card variant='outlined'  style={{ padding: '8px', backgroundColor: ' #c6ffff41', width:'500px'}}>
@@ -89,6 +92,10 @@ function ListaPostagem() {
                     </Card>
                 </Box>
             ))}
+            </div>
+            <div >
+
+            </div>
         </div>
     );
 }
