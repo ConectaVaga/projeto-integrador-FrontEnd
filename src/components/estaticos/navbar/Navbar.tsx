@@ -110,7 +110,8 @@ function Navbar() {
 
           
           <Box>
-            <Box mx={1} className="logout" onClick={goLogout} display={"flex"} justifyContent={"space-between"} width={"100%"}>
+            <Box mx={1} className="logout" onClick={goLogout} display={"flex"} 
+                 justifyContent={"space-between"} width={"100%"}>
               <Typography variant="h5" color="inherit">
               <LogoutIcon />
               </Typography>

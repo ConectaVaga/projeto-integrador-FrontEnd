@@ -186,6 +186,7 @@ function CadastroPostagem() {
                         multiline
                         required
                         minRows={4}
+                        maxRows={4}
                     />
                     <TextField
                         value={postagem.imagem}
@@ -198,6 +199,7 @@ function CadastroPostagem() {
                         variant="outlined"
                         fullWidth
                         minRows={4}
+                        maxRows={4}
                     />
 
                     <FormControl>

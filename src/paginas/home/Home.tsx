@@ -40,7 +40,8 @@ function Home() {
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
                 <Grid item xs={12}>
-                    <img src="https://ik.imagekit.io/6kg1q0s1r/C%C3%B3pia_de_Banners.png?updatedAt=1681922292947" alt="Imagem Capa" className="fotoHome" />
+                    <img src="https://ik.imagekit.io/ohu04lxwc/img_substituta.png?updatedAt=1683202051206"
+                         alt="Imagem Capa" className="fotoHome" />
                 </Grid>
                 <Grid alignItems="center" item xs={12}>
                     <Box paddingX={12}>
