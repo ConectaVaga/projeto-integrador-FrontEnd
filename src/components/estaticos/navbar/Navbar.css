@@ -18,6 +18,7 @@
 }
 
 .logout{
+    color: white !important;
     cursor: pointer;
     align-items: center !important;
     width: 80px;

@@ -47,6 +47,7 @@ function ListaPostagem() {
 
     return (
         <div className='listaPost'>
+            
             {postagens.map((post) => (
                 <Box m={4}  alignItems="center" justifyContent="center">
                     <Card variant='outlined'  style={{ padding: '8px', backgroundColor: ' #c6ffff41', width:'500px'}}>

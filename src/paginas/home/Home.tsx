@@ -46,7 +46,7 @@ function Home() {
                 <Grid alignItems="center" item xs={12}>
                     <Box paddingX={12}>
                         <Typography variant="h4" component="h3" align="center" className='titulo'>
-                            Postagens em Destaques
+                            Postagens em Destaque
                         </Typography>
                         <Typography variant="subtitle1" gutterBottom component="h3" align="center" className='subtitulo'>
                             O que gostaria de compartilhar?
@@ -58,7 +58,7 @@ function Home() {
                         </Box>
                         <Box marginLeft={3}>   
                             <Link to={"/postagens"}>
-                                <Button variant="outlined" style={{backgroundColor:"#1d3557"}}> 
+                                <Button variant="outlined" style={{backgroundColor:" #114880", color: 'white'}}> 
                                     Ver Postagens
                                 </Button>
                             </Link>
