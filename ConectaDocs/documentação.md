@@ -1,5 +1,13 @@
 # :page_facing_up: Documentação da API ConectaVaga
 
+<p align="center">
+ <a href="#usuário">Usuário</a> •
+ <a href="#tema">Tema</a> •
+ <a href="#postagem">Postagem</a> • 
+ <a href="#-pré-requisitos">Pré-Requisitos</a> • 
+ <a href="#-rodando-o-projeto">Rodando o Projeto</a>
+</p>
+
 <br>
 
 <!-- =========================== -->
@@ -643,76 +651,39 @@
   <br>
 </details>
 <br>
-<br>
 
   
-## 📌Pré-Requisitos
+## 📌 Pré-Requisitos
 
-**Caso queira executar o projeto, você deve ter instalado em sua máquina:**
+Caso queira executar o projeto, você deve ter instalados em sua máquina:
 - [Node.js](https://nodejs.org/en/)
-- [Npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
-- [Visual Studio Code](https://code.visualstudio.com/)
+- [Npm](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/)
 
-**Recomendações**
--   Instale a seguinte Extensão no seu VSCode: [ES7+ React/Redux/React-Native snippets - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets) 
-- Após a instalação da Extensão, você pode usar dentro dos arquivos .JSX/.TSX os **Atalhos**: 
+<br>
+  
+## 📕 Rodando o Projeto
 
-
-## 📕Instalação
-
-### Criando/Instalando o React
+Você deve clonar o projeto para a sua máquina, rodando no terminal:
 ```
-npm install -g create-react-app
+git clone https://github.com/ConectaVaga/projeto-integrador-FrontEnd.git
+  
+cd projeto-integrador-FrontEnd
 ```
 
+<br>
+  
+Em seguida, é necessário instalar as dependências para então rodar o código no *localhost*.
+
+Com o **yarn**:
 ```
-npx create-react-app blog-pessoal --template typescript 
+yarn
+  
+yarn dev
 ```
----
-### Instalação do Material UI
+  
+Com o **npm**:
 ```
-yarn add @material-ui/core@4.12.3
-```
-```
-yarn add @material-ui/icons@4.11.2
-```
-```
-yarn add @mui/icons-material@5.0.5
-```
-```
-yarn add @material-ui/lab@4.0.0-alpha.60
-```
-```
-yarn add @emotion/react@11.5.0
-```
-```
-yarn add @emotion/styled@11.3.0
-```
-```
-yarn add @mui/material@5.0.6
-```
----
-### Instalação da React Router Dom
-```
-yarn add react-router-dom@6
-```
----
-### Instalação do Axios
-```
-yarn add axios@0.21.4
-```
----
-### Instalação do useLocalStorage
-```
-yarn add react-use-localstorage@3.5.3
-```
----
-### Instalação do Redux
-```
-yarn add @types/redux@3.6.0 react-redux@7.2.5
-```
----
-### Instalação da React-toastify
-```
-yarn add react-toastify@8.0.3
+npm install
+
+npm run dev
 ```
