@@ -98,6 +98,7 @@ function Login() {
         <Grid xs={5} className="imagemLogin"></Grid>
         <Grid item xs={6} alignItems="center">
           <Box paddingX={4}>
+
             <form onSubmit={onSubmit}>
               <Box paddingX={12}>
                 <Typography
@@ -133,54 +134,45 @@ function Login() {
 
               />
               <TextField
-                id="senha"
-                value={userLogin.senha}
-                onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                label="Senha"
-                variant="outlined"
-                name="senha"
-                margin="normal"
-                type="password"
-                required
-                className="textField"   
-                style={{marginBottom:"4vh"}}            
+                   id="senha"  value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                   updatedModel(e)} label="Senha" variant="outlined" name="senha" margin="normal"
+                   type="password" required className="textField" style={{marginBottom:"4vh"}}    />
+               <Box marginTop={0} textAlign={"center"}>
 
-
-              />
-              <Box marginTop={0} textAlign={"center"}>
-                <Button
-                  type="submit"
-                  variant="contained"
-                  color="primary"
-                   
-                >
+                <Button type="submit" variant="contained" color="primary">
                   Logar
                 </Button>
               </Box>
+
             </form>
-            <Box display={"flex"} justifyContent={"center"}>
+            {/* <Box display={"flex"} justifyContent={"center"}> */}
               <Box>
                 <Typography
                   variant="subtitle2"
                   gutterBottom
                   align="center"
                 >
-                  Novo no ConectaVaga?
+                 Novo no ConectaVaga? 
+
                 </Typography>
               </Box>
+               <Box>
+              <Typography>
+                         
+              </Typography>
+              </Box> 
               <Link to={"/cadastroUsuario"}>
                 <Typography
                   variant="subtitle2"
                   gutterBottom
                   align="center"
                   className='textoCadastre'
-              
                 >
-                  Cadastra-se!
+                  Cadastre-se!
                 </Typography>
               </Link>
             </Box>
-          </Box>
+          {/* </Box> */}
         </Grid>
       </Grid>
     </>
