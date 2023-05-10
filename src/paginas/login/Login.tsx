@@ -107,6 +107,7 @@ function Login() {
                   color="textPrimary"
                   component="h3"
                   align="center"
+                  className="textoLogin"
                 >
                   Seja bem-vinde!
                 </Typography>
