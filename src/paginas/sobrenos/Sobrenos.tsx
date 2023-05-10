@@ -41,13 +41,13 @@ function Sobrenos() {
 
 
                     <Grid item xs={4}>
-                      <strong>Valores:</strong><br />
-                      Baseado na ética e responsabilidade social, valorizamos as diferenças e acreditamos em oportunidades iguais.
-                    </Grid>
-
-                    <Grid item xs={4}>
                       <strong>Missão:</strong><br />
                       No ambiente digital, ser o meio que conecta pessoas em contextos de vulnerabilidade a oportunidades de trabalho.
+                    </Grid>
+                    
+                    <Grid item xs={4}>
+                      <strong>Valores:</strong><br />
+                      Baseado na ética e responsabilidade social, valorizamos as diferenças e acreditamos em oportunidades iguais.
                     </Grid>
 
                     <Grid item xs={4}>
