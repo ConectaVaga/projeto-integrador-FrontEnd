@@ -12,19 +12,20 @@ function Contato() {
         <>
             <Typography className='tituloctt'>Nosso Time</Typography>
             <Box className='textoConjunto'>
-                <Typography paddingX={22} className='textoctt'>Com grande alegria gostariamos de contar que estamos
+                <Typography paddingX={22} className='textoctt'>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Com grande alegria gostariamos de contar que estamos
                     prestes a nos formar no curso Fullstack em Java. Foi uma jornada intensa, cheia de desafios, mas também muito
                     gratificante.
                 </Typography>
                 <br />
                 <Typography paddingX={22} className='textoctt'>
-                    Ao longo do curso, aprendemos uma variedade de habilidades e ferramentas que nos permitiram desenvolver
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ao longo do curso, aprendemos uma variedade de habilidades e ferramentas que nos permitiram desenvolver
                     aplicações web completas, desde o frontend até o backend. Combinamos tecnologias como Java, HTML, CSS,
                     JavaScript, JPA, Spring e outras para criar soluções robustas e eficientes.
                 </Typography>
                 <br />
                 <Typography paddingX={22} className='textoctt'>
-                    Além disso, também tivemos a oportunidade de trabalhar em projetos em grupo, o que nos permitiu aprimorar
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Além disso, também tivemos a oportunidade de trabalhar em projetos em grupo, o que nos permitiu aprimorar
                     nossas habilidades de comunicação, colaboração e gerenciamento de projetos.
                 </Typography>
             </Box>
