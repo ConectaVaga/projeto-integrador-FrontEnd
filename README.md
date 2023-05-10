@@ -135,7 +135,7 @@ Clique [aqui](https://github.com/ConectaVaga/projeto-integrador-FrontEnd/blob/ma
           <th><img src="https://ik.imagekit.io/ohu04lxwc/Jo%C3%A3o.png?updatedAt=1682437106557" width=100 height=100 alt="João Kiala" ></th>
           <th><img src="https://ik.imagekit.io/ohu04lxwc/Murilo.png?updatedAt=1682436496134" width=100 height=100 alt="Murilo Ribeiro" ></th>
           <th><img src="https://ik.imagekit.io/ohu04lxwc/Natanael.png?updatedAt=1682436969106" width=100 height=100 alt="Natanael Bento" ></th>
-          <th><img src="https://ik.imagekit.io/ohu04lxwc/Rafael.png?updatedAt=1682437335311" width=100 height=100 alt="Rafael Duarte" ></th>
+          <th><img src="https://ik.imagekit.io/ohu04lxwc/Rafael_.png?updatedAt=1683741525990" width=100 height=100 alt="Rafael Duarte" ></th>
           <th><img src="https://ik.imagekit.io/ohu04lxwc/Rebeca.png?updatedAt=1682436742670" width=100 height=100 alt="Rebeca Silva" ></th>
           <th><img src="https://ik.imagekit.io/ohu04lxwc/Rony.png?updatedAt=1682436500390" width=100 height=100 alt="Rony dos Santos" ></th>
           <th><img src="https://ik.imagekit.io/ohu04lxwc/Vitoria.png?updatedAt=1682436746882" width=100 height=100 alt="Vitoria Busch" ></th>
