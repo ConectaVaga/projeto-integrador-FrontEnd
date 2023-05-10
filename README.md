@@ -17,8 +17,9 @@
 
 <br>
 
-<p align=center> <strong>Missão:</strong> No ambiente digital, ser o meio que conecta pessoas em situação de vulnerabilidade à oportunidades de trabalho.</p>
+<p align=center> <strong>Missão:</strong> No ambiente digital, ser o meio que conecta pessoas em contextos de vulnerabilidade a oportunidades de trabalho.</p>
 <p align=center> <strong>Valores:</strong> Baseado na ética e responsabilidade social, valorizamos as diferenças e acreditamos em oportunidades iguais.</p>
+<p align=center> <strong>Propósito:</strong> Contribuir no progresso de todos os nossos usuários, auxiliando na construção de um futuro próspero para toda a sociedade.</p>
 
 <br>
 
