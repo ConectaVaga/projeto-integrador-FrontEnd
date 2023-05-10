@@ -51,8 +51,7 @@ function ListaTema() {
             <CardContent>
               <Typography color="textSecondary" gutterBottom>
                 Tema
-              </Typography>
-              
+              </Typography>            
               <Typography variant="h4" component="h2">
                 {tema.nome}
               </Typography>

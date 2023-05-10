@@ -218,7 +218,7 @@ function CadastroPostagem() {
                         </Select>
                         <FormHelperText>Escolha um tema para a sua postagem</FormHelperText>
                     </FormControl>
-                    <Button variant="contained" color="primary" type='submit' disabled={tema.id === 0}>
+                    <Button style={{ display: "block" }} variant="contained" color="primary" type='submit' disabled={tema.id === 0}>
                         {tema.id === 0 ? 'selecione um tema' : 'cadastrar'}
                     </Button>
                 </form>

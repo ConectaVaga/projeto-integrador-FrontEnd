@@ -50,6 +50,7 @@ function Footer() {
                 </Typography>
               </Box>
             </Grid>
+
             <Grid item xs={4}>
               <Box display="flex" alignItems="center" justifyContent="center" marginTop={1} flexDirection={"column"}>
                 <img
@@ -60,6 +61,7 @@ function Footer() {
                 </Typography>
               </Box>
             </Grid>
+
             <Grid item xs={4}>
               <Box
                 paddingTop={1}
@@ -82,6 +84,7 @@ function Footer() {
                     </Typography>
                   </a>
                 </Box>
+                
               </Box>
             </Grid>
 
