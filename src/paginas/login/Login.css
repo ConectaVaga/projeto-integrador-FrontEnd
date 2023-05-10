@@ -14,5 +14,10 @@ width: 60vh;
 .textoCadastre{
     font-weight: bold !important;
     color: #000;
-    
+}
+
+.textoLogin{
+    text-align: center;
+    font-weight: bold !important;
+    color: #CD0045!important;
 }
