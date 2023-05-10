@@ -674,14 +674,14 @@ cd projeto-integrador-FrontEnd
   
 Em seguida, é necessário instalar as dependências para então rodar o código no *localhost*.
 
-Com o **yarn**:
+- Com o **yarn**:
 ```
 yarn
   
 yarn dev
 ```
   
-Com o **npm**:
+- Com o **npm**:
 ```
 npm install
 
