@@ -40,10 +40,12 @@ function Contato() {
                     <Box className='integranteDetail'>
                         <h3>João Kiala</h3>
                     </Box>
-                    <ul>
-                        <li><Link to='https://www.linkedin.com/in/jo%C3%A3o-kiala-vioka-panzo/'><LinkedInIcon className='social' /></Link></li>
-                        <li><Link to='https://github.com/Joaopanzo261' target='blank'><GitHubIcon className='social' /></Link></li>
-                    </ul>
+                    <Grid container justifyContent="center">
+                        <Grid item xs={3}></Grid>
+                        <Grid item xs={3}><Link to='https://www.linkedin.com/in/jo%C3%A3o-kiala-vioka-panzo/'><LinkedInIcon className='social' /></Link></Grid>
+                        <Grid item xs={3}><Link to='https://github.com/Joaopanzo261' target='blank'><GitHubIcon className='social' /></Link></Grid>
+                        <Grid item xs={3}></Grid>
+                    </Grid>
                 </Box>
 
                 <Box mx={12} className='integrantes'>
@@ -53,10 +55,12 @@ function Contato() {
                     <Box className='integranteDetail'>
                         <h3>Murilo Ribeiro</h3>
                     </Box>
-                    <ul>
-                        <li><Link to='https://www.linkedin.com/in/murilo-ribeiro-528515156/' target='blank'><LinkedInIcon className='social' /></Link></li>
-                        <li><Link to='https://github.com/MuRibeiro' target='blank'><GitHubIcon className='social' /></Link></li>
-                    </ul>
+                    <Grid container justifyContent="center">
+                        <Grid item xs={3}></Grid>
+                        <Grid item xs={3}><Link to='https://www.linkedin.com/in/murilo-ribeiro-528515156/' target='blank'><LinkedInIcon className='social' /></Link></Grid>
+                        <Grid item xs={3}><Link to='https://github.com/MuRibeiro' target='blank'><GitHubIcon className='social' /></Link></Grid>
+                        <Grid item xs={3}></Grid>
+                    </Grid>
                 </Box>
 
                 <Box mx={12} className='integrantes'>
@@ -66,10 +70,12 @@ function Contato() {
                     <Box className='integranteDetail'>
                         <h3>Natanael Bento</h3>
                     </Box>
-                    <ul>
-                        <li><Link to='https://www.linkedin.com/in/natanael-da-silva-bento-9422b21b2/' target='blank'><LinkedInIcon className='social' /></Link></li>
-                        <li><Link to='https://github.com/natanael-bento' target='blank'><GitHubIcon className='social' /></Link></li>
-                    </ul>
+                    <Grid container justifyContent="center">
+                        <Grid item xs={3}></Grid>
+                        <Grid item xs={3}><Link to='https://www.linkedin.com/in/natanael-da-silva-bento-9422b21b2/' target='blank'><LinkedInIcon className='social' /></Link></Grid>
+                        <Grid item xs={3}><Link to='https://github.com/natanael-bento' target='blank'><GitHubIcon className='social' /></Link></Grid>
+                        <Grid item xs={3}></Grid>
+                    </Grid>
                 </Box>
 
 
@@ -81,10 +87,12 @@ function Contato() {
                     <Box className='integranteDetail'>
                         <h3>Rafael Duarte</h3>
                     </Box>
-                    <ul>
-                        <li><Link to='https://www.linkedin.com/in/rafael-duarte-8b58221ab/' target='blank'><LinkedInIcon className='social' /></Link></li>
-                        <li><Link to='https://github.com/RafaelAstora' target='blank'><GitHubIcon className='social' /></Link></li>
-                    </ul>
+                    <Grid container justifyContent="center">
+                        <Grid item xs={3}></Grid>
+                        <Grid item xs={3}><Link to='https://www.linkedin.com/in/rafael-duarte-8b58221ab/' target='blank'><LinkedInIcon className='social' /></Link></Grid>
+                        <Grid item xs={3}><Link to='https://github.com/RafaelAstora' target='blank'><GitHubIcon className='social' /></Link></Grid>
+                        <Grid item xs={3}></Grid>
+                    </Grid>
                 </Box>
 
 
@@ -95,10 +103,12 @@ function Contato() {
                     <Box className='integranteDetail'>
                         <h3>Rebeca Santana</h3>
                     </Box>
-                    <ul>
-                        <li><Link to='https://www.linkedin.com/in/rebecasantana/' target='blank'><LinkedInIcon className='social' /></Link></li>
-                        <li><Link to='https://github.com/rebecasantana' target='blank'><GitHubIcon className='social' /></Link></li>
-                    </ul>
+                    <Grid container justifyContent="center">
+                        <Grid item xs={3}></Grid>
+                        <Grid item xs={3}><Link to='https://www.linkedin.com/in/rebecasantana/' target='blank'><LinkedInIcon className='social' /></Link></Grid>
+                        <Grid item xs={3}><Link to='https://github.com/rebecasantana' target='blank'><GitHubIcon className='social' /></Link></Grid>
+                        <Grid item xs={3}></Grid>
+                    </Grid>
                 </Box>
 
                 <Box mx={12} className='integrantes'>
@@ -108,11 +118,14 @@ function Contato() {
                     <Box className='integranteDetail'>
                         <h3>Rony dos Santos</h3>
                     </Box>
-                    <ul>
-                        <li><Link to='https://www.linkedin.com/in/rony-dos-santos-teles-29649a172/' target='blank'><LinkedInIcon className='social' /></Link></li>
-                        <li><Link to='https://github.com/ronyrst'><GitHubIcon className='social' target='blank' /></Link></li>
-                    </ul>
+                    <Grid container justifyContent="center">
+                        <Grid item xs={3}></Grid>
+                        <Grid item xs={3}><Link to='https://www.linkedin.com/in/rony-dos-santos-teles-29649a172/' target='blank'><LinkedInIcon className='social' /></Link></Grid>
+                        <Grid item xs={3}><Link to='https://github.com/ronyrst' target='blank'><GitHubIcon className='social' /></Link></Grid>
+                        <Grid item xs={3}></Grid>
+                    </Grid>
                 </Box>
+
                 <Box mx={12} className='integrantes'>
                     <Box className='foto'>
                         <img src="https://cdn.discordapp.com/attachments/885611260702523445/1103016434604462110/Vitoria.png" alt="" />
@@ -120,10 +133,12 @@ function Contato() {
                     <Box className='integranteDetail'>
                         <h3>Vitoria Busch</h3>
                     </Box>
-                    <ul>
-                        <li><Link to='https://www.linkedin.com/in/vitoria-f-park-busch-6a015019b/' target='blank'><LinkedInIcon className='social' /></Link></li>
-                        <li><Link to='https://github.com/vfpark'><GitHubIcon className='social' target='blank'  /></Link></li>
-                    </ul>
+                    <Grid container justifyContent="center">
+                        <Grid item xs={3}></Grid>
+                        <Grid item xs={3}><Link to='https://www.linkedin.com/in/vitoria-f-park-busch-6a015019b/' target='blank'><LinkedInIcon className='social' /></Link></Grid>
+                        <Grid item xs={3}><Link to='https://github.com/vfpark' target='blank'><GitHubIcon className='social' /></Link></Grid>
+                        <Grid item xs={3}></Grid>
+                    </Grid>
                 </Box>
 
 
