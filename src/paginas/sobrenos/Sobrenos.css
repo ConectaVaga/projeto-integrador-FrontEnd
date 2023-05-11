@@ -5,3 +5,10 @@
     background-position: center;
     min-height: 100vh;
 }
+
+.tituloSobreNos {
+    text-align: center;
+    font-size: 7vh !important;
+    color: #114880;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

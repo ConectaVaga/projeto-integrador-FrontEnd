@@ -159,7 +159,7 @@ function CadastroPostagem() {
             <Container maxWidth={'sm'}>
                 <form className='cadastroPost' onSubmit={onSubmit}>
                     <Typography marginTop={4} variant="h3" align="center">
-                        Cadastrar postagem
+                        {postagem.id !== 0 ? "Editar postagem" : "Cadastrar postagem"}
                     </Typography>
                     <TextField
                         value={postagem.titulo}

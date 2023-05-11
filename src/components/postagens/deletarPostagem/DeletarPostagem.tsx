@@ -80,7 +80,7 @@ function DeletarPostagem() {
     }
   
     function nao(){
-      history('/posts')
+      history('/postagens')
     }
    
   return (

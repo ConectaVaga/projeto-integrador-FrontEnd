@@ -6,7 +6,7 @@ import { useNavigate, Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { TokenState } from '../../../store/tokens/TokensReducer'
 import { toast } from 'react-toastify'
-import { Grid } from '@material-ui/core';
+import { Avatar, Grid } from '@material-ui/core';
 
 function ListaPostagem() {
 
@@ -47,9 +47,13 @@ function ListaPostagem() {
     }, [postagens.length]);
 
     return (
-        <div className='listaPost'>
+        <div className='listaPost' style={{
+            display: 'flex',
+            alignItems: 'center',
+            flexDirection: 'column',
+          }}>
 
-          <div >
+          
 
             {postagens.map((post) => (
                 <Box m={4}  alignItems="center" justifyContent="center">
@@ -92,10 +96,8 @@ function ListaPostagem() {
                     </Card>
                 </Box>
             ))}
-            </div>
-            <div >
-
-            </div>
+            
+            
         </div>
     );
 }

@@ -12,7 +12,9 @@ function Sobrenos() {
         <Grid xs={10} paddingTop={3} paddingBottom={5} style={{ color: '#0A0840' }}>
 
           <Box paddingX={8} justifyContent={'center'}>
-            <Typography variant='h2' gutterBottom justifyContent={'center'} align='center'>Quem somos:</Typography>
+            <Typography variant='h2' gutterBottom justifyContent={'center'} align='center' className='tituloSobreNos'>
+              Quem somos:
+            </Typography>
             <Grid>
               <Box>
                 <Typography marginTop={5} variant='h6' justifyContent={'center'} align='center' style={{ background: '' }} >
