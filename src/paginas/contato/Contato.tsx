@@ -13,8 +13,8 @@ function Contato() {
             <Typography className='tituloctt'>Nosso Time</Typography>
             <Box className='textoConjunto'>
                 <Typography paddingX={22} className='textoctt'>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Com grande alegria gostariamos de contar que estamos
-                    prestes a nos formar no curso Fullstack em Java. Foi uma jornada intensa, cheia de desafios, mas também muito
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Com grande alegria gostaríamos de contar que concluímos o 
+                    curso de Java Fullstack da Generation Brasil. Foi uma jornada intensa, cheia de desafios, mas também muito
                     gratificante.
                 </Typography>
                 <br />
